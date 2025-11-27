@@ -48,20 +48,6 @@ db.prepare('CREATE TABLE IF NOT EXISTS messages (id INTEGER PRIMARY KEY AUTOINCR
 db.prepare('CREATE TABLE IF NOT EXISTS db_hits (id INTEGER PRIMARY KEY AUTOINCREMENT, ip TEXT, ts TEXT);').run().catch(console.error);
 
 app.use('/assets', express.static(path.join(__dirname, "assets")));
-// Block access to legacy personal presentation assets (sanitization)
-app.use('/presentation', (req, res, next) => {
-    const p = req.path || '';
-    if (
-        p.startsWith('/bookminder') ||
-        p === '/bm_spinner.svg' ||
-        p.startsWith('/images/bookminder') ||
-        p.startsWith('/slides/bookminder_es') ||
-        p.startsWith('/videos/bookminder_es')
-    ) {
-        return res.status(404).send('Not found');
-    }
-    next();
-});
 app.use('/presentation', express.static(path.join(__dirname, "presentation")));
 
 
