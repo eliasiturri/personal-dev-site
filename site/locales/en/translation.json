@@ -1,0 +1,798 @@
+{
+    "language": "en",
+    "companyName": "Johan Johansson",
+    "greeting": "Hello, World!",
+    "siteTitle": "Johan Johansson",    
+    "credits": {
+        "licenseName": "License",
+        "intro": "For building this website I have used libraries, fonts, images, and inspiration from other parties. Here is the list:",
+        "elements": [
+            {
+                "header": "Libraries",
+                
+                "items": [
+                    {
+                        "header": "GSAP (GreenSock Animation Platform)",
+                        "description": "GSAP is a JavaScript library for creating high-performance animations that work in every major browser.",
+                        "license": "GreenSock's standard \"no charge\" license",
+                        "link": "https://github.com/greensock/GSAP"
+                    },
+                    {
+                        "header": "lenis",
+                        "description": "Lenis is a lightweight, robust, and performant smooth scroll library.",
+                        "license": "MIT License",
+                        "link": "https://github.com/darkroomengineering/lenis"
+                    },
+                    {
+                        "header": "Slim Select 2",
+                        "description": "Slim Select 2 is a simple, dependency free, select library for JS.",
+                        "license": "MIT License",
+                        "link": "https://github.com/brianvoe/slim-select"
+                    },
+                    {
+                        "header": "reveal.js (The HTML Presentation Framework)",
+                        "description": "reveal.js is an open source HTML presentation framework.",
+                        "license": "MIT License",
+                        "link": "https://github.com/hakimel/reveal.js"
+                    },
+                    {
+                        "header": "Glider.js",
+                        "description": "A blazingly fast native scrolling list.",
+                        "license": "MIT License",
+                        "link": "https://github.com/NickPiscitelli/Glider.js"
+                    }
+                ]
+            },
+            {
+                "header": "Fonts",
+                "items": [
+                    {
+                        "header": "Work Sans",
+                        "description": "Work Sans is a typeface family based loosely on early Grotesques, created (or led) by Wei Huang.",
+                        "license": "Open Font License",
+                        "link": "https://github.com/weiweihuanghuang/Work-Sans"
+                    },
+                    {
+                        "header": "Archivo Black",
+                        "description": "Archivo is a grotesque sans serif typeface family from Omnibus-Type. It was originally designed for highlights and headlines.",
+                        "license": "Open Font License",
+                        "link": "https://github.com/Omnibus-Type"
+                    }                    
+                ]
+            },
+            {
+                "header": "Images",
+                "items": [
+                    {
+                        "header": "Font Awesome Icons",
+                        "description": "I have used the following fontawesome icons, in svg format: [fa-brands fa-github], [fa-solid fa-pencil], [fa-solid fa-house], [fa-solid fa-circle-up], [fa-file-powerpoint], and [fa-bookmark].",
+                        "license": "Font Awesome Free License",
+                        "link": "https://fontawesome.com/"
+                    },
+                    {
+                        "header": "\"Typography\" Icon by Justin Blake",
+                        "description": "I have also used the Typography Icon by Justin Blake, available at thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/typography-2236845/"
+                    },
+                    {
+                        "header": "\"home automation\" Icon by Daniel T.",
+                        "description": "...and the \"home automation\" Icon by Daniel T., also from thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/home-automation-5024813/"
+                    },
+                    {
+                        "header": "\"web\" Icon by Ilyas Aji Furqon",
+                        "description": "...and the \"web\" Icon by Ilyas Aji Furqon, also from thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/web-7814345/"
+                    },
+                    {
+                        "header": "\"jogger\" Icon by Maan Icons",
+                        "description": "...and the \"jogger\" Icon by Maan Icons, also from thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/jogger-7582291/"
+                    },
+                    {
+                        "header": "\"Pump\" Icon by icon trip",
+                        "description": "...and the \"Pump\" Icon by icon trip, also from thenounproject.com.",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/pump-7279811/"
+                    }                                          
+                ]
+            },
+            {
+                "header": "Inspiration",
+                "items": [
+                    {
+                        "header": "On-Scroll Animation Ideas for Sticky Sections",
+                        "description": "Post, demo, and code by Manoela Ilic on tympanus.net/codrops",
+                        "license": "MIT License",
+                        "link": "https://tympanus.net/codrops/2024/01/31/on-scroll-animation-ideas-for-sticky-sections/"
+                    },
+                    {
+                        "header": "Codepen code by Ana Travas",
+                        "description": "The faint static noise background CSS animation, although with a differente base image, comes from this codepen by Ana Travas, from where I also got to see how good the Archivo Black font looks in headlines. Ana Travas does great original graphic design work, which has never been among my strengths. By all means, check her out! Their linked sites are, at the time of writing this <a class=\"underline-decoration\" href=\"https://anatravas.com/\">anatravas.me</a>, <a class=\"underline-decoration\" href=\"https://animista.net\">animista.net</a>, and <a class=\"underline-decoration\" href=\"https://svgartista.net/\">svgartista.net</a>.",
+                        "license": "Publicly shared code considered to be in the Public Domain",
+                        "link": "https://codepen.io/anatravas/pen/vyOwOZ"
+                    }                   
+                ]
+            }
+        ]
+    },
+    "nav": [
+        {
+            "idx": 0,
+            "name": "About",
+            "samePage": true,
+            "link": "#about",
+            "linkNotFromFrontpage": "/#about"
+        },
+        {
+            "idx": 1,
+            "name": "Projects",
+            "samePage": true,
+            "link": "#projects",
+            "linkNotFromFrontpage": "/#projects"
+        },
+        {
+            "idx": 2,
+            "name": "Posts",
+            "samePage": false,
+            "link": "posts",
+            "linkNotFromFrontpage": "/posts"
+        },
+        {
+            "idx": 3,
+            "name": "Contact",
+            "samePage": true,
+            "link": "#contact",
+            "linkNotFromFrontpage": "/#contact"
+        }
+    ],
+    "footer": {
+        "links":  [
+            {
+                "name": "Libraries & Credits",
+                "url": "/credits"
+            }
+        ]
+    },
+    "about": {
+        "title": "Hi.",
+        "content": "I'm Johan — a passionate full-stack developer who loves turning ideas into elegant solutions. I specialize in modern web technologies and enjoy building intuitive user experiences. Open-source enthusiast and always eager to collaborate on exciting projects. Let's create something amazing together!"
+    },
+    "slider": {
+        "headline": "Quick Showcase.",
+        "subheader": "or keep scrolling down",
+        "goUpLink": "Go Up to Quick Showcase ↑"
+    },
+    "contact": {
+        "header": "Contact me.",
+        "intro": "I'd rather not put my e-mail address here, but you can use the form below to send me a message. I'll get back to you!",
+        "name": "Your name...",
+        "email": "Your email...",
+        "subject": "Subject",
+        "message": "Write your message...",
+        "submit": "Send",
+        "reset": "Reset",
+        "success": "Message stored and forwarded successfully!",
+        "error": "An error occurred, please try again later.",
+        "fwdError": "Message stored, but it couldn't be forwarded. It might take a bit longer for me to get back to you.",
+        "tooManyRequests": "We have received too many requests from your IP in the last hour, please try again later.",
+        "invalidEmail": "You haven't entered an email address, or the one you entered looks invalid. If you wan't to continue anyway, press \"Send\" again."
+    },
+    "projects": [
+        {
+            "title": "TaskFlow Pro",
+            "description": "A modern task management application with real-time collaboration features. Built with Vue.js and Node.js, it offers kanban boards, time tracking, and team analytics.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Vue.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },                
+                {
+                    "name": "Docker",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Visit website",
+                    "icon": "website",
+                    "url": "https://example.com"
+                },
+                {
+                    "name": "View on GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/taskflow"
+                }
+            ]
+        },
+        {
+            "title": "WeatherNow API",
+            "description": "A RESTful API service providing real-time weather data with historical analysis. Features include location-based forecasts, severe weather alerts, and customizable data aggregation.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Vue.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Python",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Visit website",
+                    "icon": "website",
+                    "url": "https://example.com"
+                },
+                {
+                    "name": "View on GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/weathernow"
+                }
+            ]
+        },
+        {
+            "title": "FitTrack Mobile",
+            "description": "A cross-platform fitness tracking mobile app with workout plans, nutrition logging, and progress visualization. Syncs data across devices and integrates with popular wearables.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "React Native",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "MongoDB",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Visit website",
+                    "icon": "website",
+                    "url": "https://example.com"
+                },
+                {
+                    "name": "View on GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/fittrack"
+                }
+            ]
+        },
+        {
+            "title": "CodeSnippet Manager",
+            "description": "A developer tool for organizing and sharing code snippets with syntax highlighting, tagging, and search functionality. Supports team collaboration and version control integration.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Python",
+                    "style": "border"
+                },
+                {
+                    "name": "Flask",
+                    "style": "border"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Website offline",
+                    "icon": "website",
+                    "disabled": true,
+                    "url": ""
+                },
+                {
+                    "name": "View on GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/codesnippet"
+                }
+            ]
+        },
+        {
+            "title": "SmartHome Dashboard",
+            "description": "A centralized dashboard for managing IoT devices and home automation systems. Features real-time monitoring, custom automation rules, and energy usage analytics.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Hardware",
+                    "style": "solid"
+                },
+                {
+                    "name": "React",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "MQTT",
+                    "style": "border"
+                },
+                {
+                    "name": "Raspberry Pi",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "View blog post",
+                    "icon": "post",
+                    "url": "/posts/smarthome"
+                },
+                {
+                    "name": "View on GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/smarthome"
+                }
+            ]
+        },
+        {
+            "title": "Portfolio Website Template",
+            "description": "This website template - static, fast, and intentionally simple. Uses the EJS template engine, includes i18n support, and features reveal.js for presentations.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "reveal.js",
+                    "style": "border"
+                },
+                {
+                    "name": "EJS",
+                    "style": "border"
+                }
+            ],
+            "preview_image": [
+                "/assets/images/quick-preview/dev-site.png"
+            ],
+            "preview_descriptions": [
+                "Fullscreen preview: minimal multilingual portfolio site featuring blog posts, a contact form (with rate limiting & sanitization), project showcase, and reveal.js presentations."
+            ],
+            "links": [
+                {
+                    "name": "View presentation",
+                    "icon": "presentation",
+                    "url": "/presentation/portfolio"
+                },
+                {
+                    "name": "View on GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/dev-site"
+                }
+            ]
+        },
+        {
+            "title": "RecipeBox",
+            "description": "A digital recipe manager with meal planning, grocery list generation, and nutritional information. Import recipes from websites, scale ingredients, and share with family.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Vue.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Firebase",
+                    "style": "border"
+                },
+                {
+                    "name": "PWA",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Visit website",
+                    "icon": "website",
+                    "url": "https://example.com"
+                },
+                {
+                    "name": "View on GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/recipebox"
+                }
+            ]
+        },
+        {
+            "title": "BudgetTracker",
+            "description": "Personal finance management tool with expense tracking, budget planning, and financial goal setting. Visualize spending patterns with interactive charts and reports.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Angular",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "MySQL",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "View blog post",
+                    "icon": "post",
+                    "url": "/posts/budgettracker"
+                },
+                {
+                    "name": "View on GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/budgettracker"
+                }
+            ]
+        },
+        {
+            "title": "ChatConnect",
+            "description": "Real-time chat application with end-to-end encryption, group conversations, file sharing, and video calling. Built with WebRTC and WebSocket technology.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "React",
+                    "style": "border"
+                },
+                {
+                    "name": "WebRTC",
+                    "style": "border"
+                },
+                {
+                    "name": "Socket.io",
+                    "style": "border"
+                },
+                {
+                    "name": "Redis",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Website offline",
+                    "icon": "website",
+                    "disabled": true,
+                    "url": ""
+                },
+                {
+                    "name": "View on GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/chatconnect"
+                }
+            ]
+        },
+        {
+            "title": "GardenBot",
+            "description": "Automated garden monitoring system using ESP32 and sensors. Tracks soil moisture, temperature, and light levels. Automatically waters plants and sends alerts via mobile app.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Hardware",
+                    "style": "solid"
+                },
+                {
+                    "name": "Arduino",
+                    "style": "border"
+                },
+                {
+                    "name": "ESP32",
+                    "style": "border"
+                },
+                {
+                    "name": "IoT",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Visit website",
+                    "icon": "website",
+                    "url": "https://gardenbot.example.com"
+                },
+                {
+                    "name": "View blog post",
+                    "icon": "post",
+                    "url": "/posts/gardenbot"
+                },
+                {
+                    "name": "View on GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/gardenbot"
+                }
+            ]
+        }                
+    ],
+    "posts": {
+        "header": "Latest posts.",
+        "intro": "Explore my journey through software development and hardware tinkering. From web apps to IoT projects, there's always something new to learn!",
+        "link": "/posts",
+        "tocName": "Table of contents",
+        "items": [
+            {
+                "title": "Building a Smart Garden with ESP32",
+                "intro": "How I automated my garden watering system using ESP32, moisture sensors, and a mobile app for remote monitoring and control.",
+                "date": "March 15, 2024",
+                "link": "/posts/gardenbot"
+            },
+            {
+                "title": "Creating a Real-Time Chat Application",
+                "intro": "A deep dive into building a secure chat app with WebRTC video calling, end-to-end encryption, and WebSocket communication.",
+                "date": "February 22, 2024",
+                "link": "/posts/chatconnect"
+            },
+            {
+                "title": "SmartHome Dashboard Development",
+                "intro": "Building a centralized IoT dashboard for home automation. Control lights, thermostats, and security cameras from one interface.",
+                "date": "January 18, 2024",
+                "link": "/posts/smarthome"
+            }
+        ]
+    },
+    "fullposts": {
+        "gardenbot": {
+            "title": "Building a Smart Garden with ESP32",
+            "intro": "How I automated my garden watering system using ESP32, moisture sensors, and a mobile app for remote monitoring and control.",
+            "author": "Johan Johansson",
+            "dateNexus": "on",
+            "date": "March 15, 2024",
+            "toc": [
+                {
+                    "name": "Introduction",
+                    "link": "#introduction"
+                },
+                {
+                    "name": "Hardware Components",
+                    "link": "#hardware"
+                },
+                {
+                    "name": "Software Architecture",
+                    "link": "#software"
+                },
+                {
+                    "name": "Future Improvements",
+                    "link": "#future"
+                }
+            ],
+            "sections": {
+                "introduction": {
+                    "title": "Introduction",
+                    "content": "In this article, I'll walk you through building an automated garden monitoring and watering system using an ESP32 microcontroller, soil moisture sensors, and a mobile application for remote control."
+                },
+                "hardware": {
+                    "title": "Hardware Components",
+                    "content": "The system uses ESP32 for its built-in WiFi capabilities, DHT22 sensors for temperature and humidity, capacitive soil moisture sensors, and a relay module to control water pumps. The entire setup is powered by a 5V supply with backup battery support."
+                },
+                "software": {
+                    "title": "Software Architecture",
+                    "content": "The mobile app communicates with the ESP32 via MQTT protocol, allowing real-time monitoring of sensor data and remote control of watering schedules. The system includes automatic watering based on soil moisture thresholds and weather forecasts."
+                },
+                "future": {
+                    "title": "Future Improvements",
+                    "content": "Future enhancements include solar panel integration, machine learning for optimal watering schedules, and support for multiple garden zones with individual moisture monitoring."
+                }
+            }
+        },
+        "chatconnect": {
+            "title": "Building ChatConnect: Real-Time Messaging with E2E Encryption",
+            "intro": "A deep dive into creating a secure real-time chat application with end-to-end encryption, WebRTC video calls, and WebSocket messaging.",
+            "author": "Johan Johansson",
+            "dateNexus": "on",
+            "date": "February 20, 2024",
+            "toc": [
+                {
+                    "name": "Overview",
+                    "link": "#overview"
+                },
+                {
+                    "name": "Security Implementation",
+                    "link": "#security"
+                },
+                {
+                    "name": "Real-Time Communication",
+                    "link": "#realtime"
+                },
+                {
+                    "name": "Video Calling with WebRTC",
+                    "link": "#webrtc"
+                },
+                {
+                    "name": "Lessons Learned",
+                    "link": "#lessons"
+                }
+            ],
+            "sections": {
+                "overview": {
+                    "title": "Overview",
+                    "content": "Building a secure, real-time chat application requires careful consideration of security, scalability, and user experience. This project implements end-to-end encryption, WebRTC for peer-to-peer video calls, and WebSocket for instant messaging."
+                },
+                "security": {
+                    "title": "Security Implementation",
+                    "content": "The application uses Signal Protocol for end-to-end encryption, ensuring that only the sender and recipient can read messages. Private keys never leave the device, and the server only routes encrypted data without access to message content."
+                },
+                "realtime": {
+                    "title": "Real-Time Communication",
+                    "content": "WebSocket connections maintain persistent connections for instant message delivery. Redis pub/sub handles message distribution across multiple server instances, ensuring scalability and reliability."
+                },
+                "webrtc": {
+                    "title": "Video Calling with WebRTC",
+                    "content": "WebRTC enables direct peer-to-peer video calls without routing through the server, reducing latency and server load. The application includes STUN/TURN servers for NAT traversal and connection reliability."
+                },
+                "lessons": {
+                    "title": "Lessons Learned",
+                    "content": "The biggest challenges were handling connection failures gracefully and optimizing for mobile networks with varying bandwidth. Implementing message queuing and retry logic was essential for a smooth user experience."
+                }
+            }
+        },
+        "smarthome": {
+            "title": "SmartHome Dashboard: Unified IoT Control",
+            "intro": "Creating a unified dashboard for managing smart home devices from different manufacturers using MQTT, React, and Node.js.",
+            "author": "Johan Johansson",
+            "dateNexus": "on",
+            "date": "January 10, 2024",
+            "toc": [
+                {
+                    "name": "Project Goals",
+                    "link": "#goals"
+                },
+                {
+                    "name": "Technology Stack",
+                    "link": "#stack"
+                },
+                {
+                    "name": "Device Integration",
+                    "link": "#integration"
+                },
+                {
+                    "name": "Automation Rules",
+                    "link": "#automation"
+                },
+                {
+                    "name": "Energy Monitoring",
+                    "link": "#energy"
+                },
+                {
+                    "name": "Next Steps",
+                    "link": "#next"
+                }
+            ],
+            "sections": {
+                "goals": {
+                    "title": "Project Goals",
+                    "content": "The goal was to create a unified dashboard for managing all smart home devices from different manufacturers, avoiding the fragmentation of having multiple apps for lights, thermostats, and security cameras."
+                },
+                "stack": {
+                    "title": "Technology Stack",
+                    "content": "The dashboard is built with React for the frontend and Node.js for the backend. MQTT broker handles communication with IoT devices, while a PostgreSQL database stores device states, automation rules, and historical data."
+                },
+                "integration": {
+                    "title": "Device Integration",
+                    "content": "The system supports multiple protocols including MQTT, Zigbee, and HTTP APIs. Custom adapters translate device-specific commands into a unified interface, making it easy to add support for new devices."
+                },
+                "automation": {
+                    "title": "Automation Rules",
+                    "content": "Users can create custom automation rules using a visual flow editor. Rules can be time-based, triggered by sensor readings, or activated by device state changes. Complex scenarios like 'turn off all lights when leaving home' are easy to configure."
+                },
+                "energy": {
+                    "title": "Energy Monitoring",
+                    "content": "The dashboard includes real-time energy consumption tracking and historical analytics. Users can identify power-hungry devices and optimize their usage patterns to reduce electricity bills."
+                },
+                "next": {
+                    "title": "Next Steps",
+                    "content": "Future development includes voice control integration, machine learning for predictive automation, and enhanced security features like anomaly detection for unusual device behavior."
+                }
+            }
+        },
+        "budgettracker": {
+            "title": "BudgetTracker: Personal Finance Management",
+            "intro": "Building a comprehensive personal finance tool with expense tracking, budget planning, and insightful data visualizations.",
+            "author": "Johan Johansson",
+            "dateNexus": "on",
+            "date": "December 5, 2023",
+            "toc": [
+                {
+                    "name": "Why I Built BudgetTracker",
+                    "link": "#why"
+                },
+                {
+                    "name": "Core Features",
+                    "link": "#features"
+                },
+                {
+                    "name": "Technical Architecture",
+                    "link": "#architecture"
+                },
+                {
+                    "name": "Data Visualization",
+                    "link": "#visualization"
+                },
+                {
+                    "name": "Security and Privacy",
+                    "link": "#security"
+                },
+                {
+                    "name": "Future Enhancements",
+                    "link": "#future"
+                }
+            ],
+            "sections": {
+                "why": {
+                    "title": "Why I Built BudgetTracker",
+                    "content": "Managing personal finances can be overwhelming with multiple accounts, subscriptions, and daily expenses. I built BudgetTracker to simplify expense tracking and provide actionable insights into spending patterns."
+                },
+                "features": {
+                    "title": "Core Features",
+                    "content": "The application includes automatic expense categorization, recurring transaction detection, budget alerts, and customizable spending limits. Users can create multiple budgets for different categories like groceries, entertainment, and transportation."
+                },
+                "architecture": {
+                    "title": "Technical Architecture",
+                    "content": "Built with Angular for the frontend and Node.js/Express backend, BudgetTracker uses MySQL for relational data storage. The architecture supports real-time updates and synchronization across multiple devices."
+                },
+                "visualization": {
+                    "title": "Data Visualization",
+                    "content": "Interactive charts built with Chart.js help users understand their spending habits. Monthly comparisons, category breakdowns, and trend analysis make it easy to identify areas for improvement."
+                },
+                "security": {
+                    "title": "Security and Privacy",
+                    "content": "All financial data is encrypted at rest and in transit. The application follows security best practices including password hashing with bcrypt, JWT authentication, and secure session management."
+                },
+                "future": {
+                    "title": "Future Enhancements",
+                    "content": "Planned features include bank account integration via Plaid API, automated savings recommendations using machine learning, and collaborative budgets for families or roommates."
+                }
+            }
+        }
+    }
+}

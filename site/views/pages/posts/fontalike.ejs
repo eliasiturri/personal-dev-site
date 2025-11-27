@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+    <%- include('../../partials/head-outside-main-page'); %>
+</head>
+<body class="container">
+    <div class="main-wrapper">
+        <div class="noise-wrapper">
+            <div class="noise"></div>
+
+        </div>
+
+        <div class="content-wrapper">
+            <div class="header-wrapper">
+                <header class="mw-o">
+                    <%- include('../../partials/header-outside-main-page'); %>
+                </header>
+            </div>            
+            <main class="mw-o">
+                
+                <div class="content content--highlight content--intro work-sans-eb-800">
+                    <h1 class="text-xl"><%= t("fullposts.fontalike.title") %></h1>
+                    <p class="text-xl text-align-center"><%= t("fullposts.fontalike.intro") %></p> 
+                    <div class="blog-post-date">
+                        <span><%= t("fullposts.fontalike.author") %></span>
+                        <span><%= t("fullposts.fontalike.dateNexus") %></span>
+                        <span><%= t("fullposts.fontalike.date") %></span>
+                    </div>
+                    <div class="blog-post-toc-title"><%= t("posts.tocName") %></div>
+                    <ul class="blog-post-toc">
+                        <% t("fullposts.fontalike.toc", { returnObjects: true }).forEach((el, index) => { %>   
+                            <li class="toc-item toc-item-<%= index % 2 === 0 ? 'even' : 'odd' %>">
+                                <a href="<%= el.link %>" class="toc-link">
+                                    <%= el.name %>
+                                </a>
+                            </li>
+                        <% }); %>
+                    </ul>
+
+                </div>      
+
+
+            </main>
+            
+            <footer class="mw-o">
+                <%- include('../../partials/footer'); %>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="/assets/js/blog-toc.js"></script>
+</body>
+</html>

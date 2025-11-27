@@ -1,0 +1,19 @@
+<div class="contact-form">
+    <div class="form-row">
+        <input type="text" id="name" name="name" placeholder="<%= t('contact.name') %>">
+        <input type="email" id="email" name="email" placeholder="<%= t('contact.email') %>">
+    </div>
+    <div class="form-row">
+        <input type="text" id="subject" name="subject" placeholder="<%= t('contact.subject') %>">
+    </div>
+    <div class="form-row">
+        <textarea id="message" name="message" placeholder="<%= t('contact.message') %>"></textarea>
+    </div>
+    <div id="info-message" class="form-row">
+        <div id="info-message-content"></div>
+    </div>
+    <div class="form-row buttons">
+        <button id="reset" class="reset-button"><%= t('contact.reset') %></button>
+        <button id="submit" class="submit-button"><%= t('contact.submit') %></button>
+    </div>
+</div>

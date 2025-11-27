@@ -1,0 +1,177 @@
+/* Reserve stable space for the language switcher to prevent layout flicker */
+.select-wrapper {
+    min-width: 130px;
+    height: 36px; /* keep nav height stable while SlimSelect initializes */
+    display: flex;
+    align-items: center;
+}
+
+/* Native select (visible until SlimSelect hides it with .ss-hide) */
+select.language-switcher {
+    /* Let the native select show if SlimSelect fails to load */
+    font-family: "Work Sans", sans-serif;
+    background-color: rgba(44, 44, 44, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: white;
+    min-width: 130px;
+    font-size: 16px;
+    height: 100%; /* match wrapper height to avoid reflow */
+    box-sizing: border-box;
+}
+
+/* Once SlimSelect initializes, it adds .ss-hide class to hide the original */
+select.language-switcher.ss-hide {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* Main SlimSelect container */
+.ss-main.language-switcher {
+    min-width: 110px;
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 4px !important;
+    padding: 4px 10px !important;
+    color: white !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: "Work Sans", sans-serif !important;
+    font-size: 16px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    height: 36px; /* ensure same height as wrapper to prevent jump */
+    box-sizing: border-box;
+}
+
+/* When SlimSelect is inside the wrapper, stretch it to occupy the reserved space */
+.select-wrapper .ss-main.language-switcher {
+    width: 100%;
+}
+
+.ss-main.language-switcher:hover {
+    border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.ss-main.language-switcher:focus,
+.ss-main.language-switcher.ss-open-below,
+.ss-main.language-switcher.ss-open-above {
+    box-shadow: none !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Selected value text */
+.ss-main.language-switcher .ss-single-selected {
+    color: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline-block !important;
+    font-family: "Work Sans", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+}
+
+/* Arrow icon */
+.ss-main.language-switcher .ss-arrow {
+    border-color: white !important;
+    margin: 0 0 0 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.ss-main.language-switcher .ss-arrow path {
+    stroke: white !important;
+}
+
+/* Dropdown list container */
+.ss-content.language-switcher {
+    background-color: rgba(20, 20, 20, 0.98) !important;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+    border-radius: 6px !important;
+    margin-top: 8px !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7) !important;
+    overflow: hidden;
+    min-width: 120px !important;
+    max-width: 140px !important;
+}
+
+/* Dropdown list */
+.ss-content.language-switcher .ss-list {
+    padding: 6px !important;
+}
+
+/* Individual option */
+.ss-content.language-switcher .ss-option {
+    color: rgba(255, 255, 255, 0.9) !important;
+    padding: 8px 12px !important;
+    border-radius: 4px !important;
+    margin: 2px 0 !important;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-family: "Work Sans", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    white-space: nowrap !important;
+}
+
+.ss-content.language-switcher .ss-option:hover {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    color: white !important;
+}
+
+.ss-content.language-switcher .ss-option.ss-selected {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.ss-content.language-switcher .ss-option.ss-highlighted {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: white !important;
+}
+
+/* Disabled state */
+.ss-content.language-switcher .ss-option.ss-disabled {
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+    cursor: not-allowed;
+}
+
+/* ===== MOBILE RESPONSIVE OVERRIDES ===== */
+
+/* Mobile portrait: make language switcher larger and more touch-friendly */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .select-wrapper {
+        min-width: fit-content;
+        height: clamp(38px, 9vw, 46px) !important;
+    }
+    
+    select.language-switcher {
+        font-size: clamp(15px, 3.5vw, 18px) !important;
+        min-width: fit-content;
+        padding: 0.5rem 0.75rem !important;
+        height: clamp(38px, 9vw, 46px) !important;
+    }
+    
+    .ss-main.language-switcher {
+        height: clamp(38px, 9vw, 46px) !important;
+        font-size: clamp(15px, 3.5vw, 18px) !important;
+        padding: 0.5rem 0.75rem !important;
+        min-width: fit-content;
+    }
+    
+    .ss-main.language-switcher .ss-single-selected {
+        font-size: clamp(15px, 3.5vw, 18px) !important;
+    }
+    
+    .ss-main.language-switcher .ss-arrow {
+        width: 14px !important;
+        height: 14px !important;
+    }
+    
+    /* Dropdown options also larger on mobile */
+    .ss-content.language-switcher .ss-option {
+        font-size: clamp(16px, 3.8vw, 19px) !important;
+        padding: 12px 16px !important;
+    }
+}

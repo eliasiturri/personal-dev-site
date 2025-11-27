@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+    <div class="main-wrapper">
+        <div class="noise-wrapper">
+            <div class="noise"></div>
+
+        </div>
+
+        <div class="content-wrapper">
+            <div class="header-wrapper">
+                <header class="mw-o">
+                    <%- include('../partials/header'); %>
+                </header>
+            </div>            
+            <main class="mw-o">
+                <div id="about" class="content content--highlight content--intro work-sans-eb-800">
+                    <h1 class="text-xl"><%= t("about.title") %></h1>
+                    <p class="text-xl text-align-center"><%= t("about.content") %></p> 
+                </div>
+                
+                <div id="projects" class="project-slider-section">
+                    <h1 class="slider-headline text-xl work-sans-eb-800"><%= t("slider.headline") %></h1>
+                    <p class="slider-subheader"><%= t("slider.subheader") %></p>
+                    
+                    <div class="glider-container">
+                        <button class="glider-prev" aria-label="Previous"></button>
+                        <button class="glider-next" aria-label="Next"></button>
+                        
+                        <div class="glider">
+                            <% t("projects", { returnObjects: true }).map((project, index) => { %>
+                                <div class="glider-slide">
+                                    <div class="project-card" data-project-index="<%= index %>">
+                                        <img class="project-card__logo<%= project.image_url.includes('dev-site-white.svg') ? ' content__img--dev-site' : '' %><%= project.image_url.includes('joggerbot.svg') ? ' content__img--joggerbot' : '' %><%= project.image_url.includes('pumpbot.svg') ? ' content__img--pumpbot' : '' %><%= project.image_url.includes('greedybee.svg') ? ' content__img--greedybee' : '' %><%= project.image_url.includes('inkspire.svg') ? ' content__img--inkspire' : '' %><%= project.image_url.includes('koreader.svg') ? ' content__img--koreader' : '' %><%= project.image_url.includes('wui.svg') ? ' content__img--wui' : '' %>" src="<%= project.image_url %>" alt="<%= project.title %>" />
+                                        <h3 class="project-card__title"><%= project.title %></h3>
+                                        <p class="project-card__description"><%= project.description %></p>
+                                    </div>
+                                </div>
+                            <% }); %>
+                        </div>
+                        
+                        <div class="glider-dots"></div>
+                    </div>
+                </div>
+                
+                <div class="wrap">
+                    <%- include('../partials/projects'); %>
+
+                </div>
+                <div id="contact" class="content content--highlight content--outro">
+                    <h1 class="text-xl"><%= t("contact.header") %></h1>
+                    <p class="text-xl text-align-center mw-1000"><%= t("contact.intro") %></p>                     
+                    <%- include('../partials/contact-form'); %>
+                </div>                
+            </main>
+            
+            <footer class="mw-o">
+                <%- include('../partials/footer'); %>
+            </footer>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

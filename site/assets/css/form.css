@@ -1,0 +1,120 @@
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin: 20px;
+}
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-form .form-row:not(:last-child) {
+    margin-bottom: 5px;
+}   
+
+.form-row input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.form-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: 18px;
+    height: 200px;
+}
+
+.form-row input:not(:last-child) {
+    margin-right: 5px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+.buttons button {
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button:not(:last-child) {
+    margin-right: 5px;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: #2c2c2c;
+}
+
+.buttons button.disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+.buttons button.disabled:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.buttons button.disabled:hover .svg-link-icon {
+    fill: rgba(255, 255, 255, 0.9);
+}
+
+.buttons button {
+    min-width: 150px;
+}
+
+/* Mobile portrait: allow buttons to wrap to multiple lines */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .buttons {
+        flex-wrap: wrap !important;
+        gap: 0.5rem !important;
+    }
+    
+    .buttons button:not(:last-child) {
+        margin-right: 0 !important;
+    }
+    
+    .buttons button {
+        min-width: 140px !important;
+        flex: 1 1 auto !important;
+    }
+}
+
+.form-row#info-message {
+    margin-top: 10px;
+    -moz-transition: height .75s;
+    -ms-transition: height .75s;
+    -o-transition: height .75s;
+    -webkit-transition: height .75s;
+    transition: height .75s;
+    height: 0;
+    overflow: hidden;    
+}
+
+button .svg-link-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: rgba(255, 255, 255, 0.9);
+    margin-right: 0.5rem;
+}
+
+button:hover .svg-link-icon {
+    fill: rgba(44, 44, 44, 0.9);
+}

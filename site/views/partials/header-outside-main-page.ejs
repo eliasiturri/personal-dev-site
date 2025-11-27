@@ -1,0 +1,17 @@
+<nav class="navbar">
+    <ul class="row">
+        <% t("nav", { returnObjects: true }).map(el => { %>    
+            <li class="navbar-nav">
+                <!--<span><%= t(`nav.${el}.idx`) %>.</span>-->
+                <a class="no-link-decoration" href="<%= el.linkNotFromFrontpage %>"><%= el.name %></a>
+            </li>
+        <% }); %>
+        <li class="navbar-nav select-wrapper">
+            <select id="language-switcher" class="language-switcher">
+                <option value="en" <%= language === 'en' ? 'selected' : '' %>>English</option>
+                <option value="es" <%= language === 'es' ? 'selected' : '' %>>Español</option>
+                <option value="se" <%= language === 'se' ? 'selected' : '' %>>Svenska</option>
+            </select>
+        </li>
+    </ul>
+</nav>

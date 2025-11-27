@@ -1,0 +1,798 @@
+{
+    "language": "en",
+    "companyName": "Johan Johansson",
+    "greeting": "Hello, World!",
+    "siteTitle": "Johan Johansson",    
+    "nav": [
+        {
+            "idx": 0,
+            "name": "Sobre mí",
+            "samePage": true,
+            "link": "#about",
+            "linkNotFromFrontpage": "/es/#about"
+        },
+        {
+            "idx": 1,
+            "name": "Proyectos",
+            "samePage": true,
+            "link": "#projects",
+            "linkNotFromFrontpage": "/es/#projects"
+        },
+        {
+            "idx": 2,
+            "name": "Posts",
+            "samePage": false,
+            "link": "posts",
+            "linkNotFromFrontpage": "/es/posts"
+        },
+        {
+            "idx": 3,
+            "name": "Contacto",
+            "samePage": true,
+            "link": "#contact",
+            "linkNotFromFrontpage": "/es/#contact"
+        }
+    ],    
+    "about": {
+        "title": "Hola.",
+        "content": "Soy Johan — un desarrollador full-stack apasionado que disfruta convirtiendo ideas en soluciones elegantes. Me especializo en tecnologías web modernas y me encanta crear experiencias de usuario intuitivas. Entusiasta del código abierto y siempre dispuesto a colaborar en proyectos emocionantes. ¡Creemos algo increíble juntos!"
+    },
+    "slider": {
+        "headline": "Exposición Rápida.",
+        "subheader": "o sigue desplazándote",
+        "goUpLink": "Subir a Exposición Rápida ↑"
+    },
+    "contact": {
+        "header": "Contacto.",
+        "intro": "Prefiero no dejar mi dirección de correo al alcance de los spammers, pero puedes contactar conmigo a través del siguiente formulario. ¡Seguimos en contacto!",
+        "name": "Tu nombre...",
+        "email": "Tu email...",
+        "subject": "Asunto",
+        "message": "Escribe tu mensaje...",
+        "submit": "Enviar",
+        "reset": "Limpiar",
+        "success": "Mensaje guardado y reenviado con éxito!",
+        "error": "Ha ocurrido un error, inténtalo de nuevo más tarde.",
+        "fwdError": "Mensaje guardado, aunque no ha podido ser reenviado. Podría tardar algo más de lo normal en ponerme en contacto contigo.",
+        "tooManyRequests": "Demasiadas peticiones desde tu IP en la última hora. Inténtalo de nuevo más tarde."
+    },    
+    "projects": [
+        {
+            "title": "TaskFlow Pro",
+            "description": "Una aplicación moderna de gestión de tareas con funciones de colaboración en tiempo real. Construida con Vue.js y Node.js, ofrece tableros kanban, seguimiento de tiempo y análisis de equipo.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Vue.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },                
+                {
+                    "name": "Docker",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Sitio web offline",
+                    "icon": "website",
+                    "url": "",
+                    "disabled": true
+                },
+                {
+                    "name": "Ver en GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/taskflow"
+                }
+            ]
+        },
+        {
+            "title": "WeatherNow API",
+            "description": "Un servicio API RESTful que proporciona datos meteorológicos en tiempo real con análisis histórico. Incluye pronósticos basados en ubicación, alertas meteorológicas severas y agregación de datos personalizable.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Vue.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Python",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Visitar sitio web",
+                    "icon": "website",
+                    "url": "https://example.com"
+                },
+                {
+                    "name": "Ver en GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/weathernow"
+                }
+            ]
+        },
+        {
+            "title": "FitTrack Mobile",
+            "description": "Una aplicación móvil multiplataforma de seguimiento físico con planes de entrenamiento, registro de nutrición y visualización de progreso. Sincroniza datos entre dispositivos y se integra con dispositivos wearables populares.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "React Native",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "MongoDB",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Visitar sitio web",
+                    "icon": "website",
+                    "url": "https://example.com"
+                },
+                {
+                    "name": "Ver en GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/fittrack"
+                }
+            ]
+        },
+        {
+            "title": "CodeSnippet Manager",
+            "description": "Una herramienta para desarrolladores para organizar y compartir fragmentos de código con resaltado de sintaxis, etiquetado y funcionalidad de búsqueda. Soporta colaboración en equipo e integración con control de versiones.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Python",
+                    "style": "border"
+                },
+                {
+                    "name": "Flask",
+                    "style": "border"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Sitio web offline",
+                    "icon": "website",
+                    "disabled": true,
+                    "url": ""
+                },
+                {
+                    "name": "Ver en GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/codesnippet"
+                }
+            ]
+        },
+        {
+            "title": "SmartHome Dashboard",
+            "description": "Un panel centralizado para gestionar dispositivos IoT y sistemas de automatización del hogar. Incluye monitoreo en tiempo real, reglas de automatización personalizadas y análisis de consumo energético.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Hardware",
+                    "style": "solid"
+                },
+                {
+                    "name": "React",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "MQTT",
+                    "style": "border"
+                },
+                {
+                    "name": "Raspberry Pi",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Ver artículo",
+                    "icon": "post",
+                    "url": "/es/posts/smarthome"
+                },
+                {
+                    "name": "Ver en GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/smarthome"
+                }
+            ]
+        },
+        {
+            "title": "Plantilla de Sitio Web Portfolio",
+            "description": "Esta plantilla de sitio web - estática, rápida y pretendidamente simple. Usa el motor de plantillas EJS, incluye soporte i18n y presenta reveal.js para presentaciones.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "reveal.js",
+                    "style": "border"
+                },
+                {
+                    "name": "EJS",
+                    "style": "border"
+                }
+            ],
+            "preview_image": [
+                "/assets/images/quick-preview/dev-site.png"
+            ],
+            "preview_descriptions": [
+                "Vista rápida: plantilla minimalista multilingüe con posts, formulario de contacto (limitación y sanitización), showcase de proyectos y presentaciones con reveal.js."
+            ],
+            "links": [
+                {
+                    "name": "Ver presentación",
+                    "icon": "presentation",
+                    "url": "/es/presentation/portfolio"
+                },
+                {
+                    "name": "Ver en GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/dev-site"
+                }
+            ]
+        },
+        {
+            "title": "RecipeBox",
+            "description": "Un gestor digital de recetas con planificación de comidas, generación de listas de compras e información nutricional. Importa recetas desde sitios web, escala ingredientes y comparte con la familia.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Vue.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Firebase",
+                    "style": "border"
+                },
+                {
+                    "name": "PWA",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Visitar sitio web",
+                    "icon": "website",
+                    "url": "https://example.com"
+                },
+                {
+                    "name": "Ver en GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/recipebox"
+                }
+            ]
+        },
+        {
+            "title": "BudgetTracker",
+            "description": "Herramienta de gestión de finanzas personales con seguimiento de gastos, planificación de presupuestos y establecimiento de metas financieras. Visualiza patrones de gasto con gráficos interactivos e informes.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Angular",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "MySQL",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Ver artículo",
+                    "icon": "post",
+                    "url": "/es/posts/budgettracker"
+                },
+                {
+                    "name": "Ver en GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/budgettracker"
+                }
+            ]
+        },
+        {
+            "title": "ChatConnect",
+            "description": "Aplicación de chat en tiempo real con cifrado de extremo a extremo, conversaciones grupales, compartición de archivos y videollamadas. Construida con tecnología WebRTC y WebSocket.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "React",
+                    "style": "border"
+                },
+                {
+                    "name": "WebRTC",
+                    "style": "border"
+                },
+                {
+                    "name": "Socket.io",
+                    "style": "border"
+                },
+                {
+                    "name": "Redis",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Sitio web offline",
+                    "icon": "website",
+                    "disabled": true,
+                    "url": ""
+                },
+                {
+                    "name": "Ver en GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/chatconnect"
+                }
+            ]
+        },
+        {
+            "title": "GardenBot",
+            "description": "Sistema de monitoreo automatizado de jardín usando ESP32 y sensores. Rastrea humedad del suelo, temperatura y niveles de luz. Riega plantas automáticamente y envía alertas vía aplicación móvil.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Hardware",
+                    "style": "solid"
+                },
+                {
+                    "name": "Arduino",
+                    "style": "border"
+                },
+                {
+                    "name": "ESP32",
+                    "style": "border"
+                },
+                {
+                    "name": "IoT",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Visitar sitio web",
+                    "icon": "website",
+                    "url": "https://gardenbot.example.com"
+                },
+                {
+                    "name": "Ver artículo",
+                    "icon": "post",
+                    "url": "/es/posts/gardenbot"
+                },
+                {
+                    "name": "Ver en GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/gardenbot"
+                }
+            ]
+        }                
+    ],
+    "posts": {
+        "header": "Últimos artículos.",
+        "intro": "Explora mi viaje a través del desarrollo de software y la experimentación con hardware. Desde aplicaciones web hasta proyectos IoT, ¡siempre hay algo nuevo que aprender!",
+        "link": "/es/posts",
+        "tocName": "Tabla de contenidos",
+        "items": [
+            {
+                "title": "Construyendo un Jardín Inteligente con ESP32",
+                "intro": "Cómo automaticé mi sistema de riego del jardín usando ESP32, sensores de humedad y una aplicación móvil para monitoreo y control remoto.",
+                "date": "15 de marzo de 2024",
+                "link": "/es/posts/gardenbot"
+            },
+            {
+                "title": "Creando una Aplicación de Chat en Tiempo Real",
+                "intro": "Una inmersión profunda en la construcción de una aplicación de chat segura con videollamadas WebRTC, cifrado de extremo a extremo y comunicación WebSocket.",
+                "date": "22 de febrero de 2024",
+                "link": "/es/posts/chatconnect"
+            },
+            {
+                "title": "Desarrollo de Dashboard SmartHome",
+                "intro": "Construyendo un panel centralizado IoT para automatización del hogar. Control de luces, termostatos y cámaras de seguridad desde una interfaz.",
+                "date": "18 de enero de 2024",
+                "link": "/es/posts/smarthome"
+            }
+        ]
+    },
+    "fullposts": {
+        "gardenbot": {
+            "title": "Construyendo un Jardín Inteligente con ESP32",
+            "intro": "Cómo automaticé mi sistema de riego del jardín usando ESP32, sensores de humedad y una aplicación móvil para monitoreo y control remoto.",
+            "author": "Johan Johansson",
+            "dateNexus": "el",
+            "date": "15 de marzo de 2024",
+            "toc": [
+                {
+                    "name": "Introducción",
+                    "link": "#introduction"
+                },
+                {
+                    "name": "Componentes de Hardware",
+                    "link": "#hardware"
+                },
+                {
+                    "name": "Arquitectura de Software",
+                    "link": "#software"
+                },
+                {
+                    "name": "Mejoras Futuras",
+                    "link": "#future"
+                }
+            ],
+            "sections": {
+                "introduction": {
+                    "title": "Introducción",
+                    "content": "En este artículo, te guiaré en la construcción de un sistema automatizado de monitoreo y riego de jardines usando un microcontrolador ESP32, sensores de humedad del suelo y una aplicación móvil para control remoto."
+                },
+                "hardware": {
+                    "title": "Componentes de Hardware",
+                    "content": "El sistema utiliza ESP32 por sus capacidades WiFi integradas, sensores DHT22 para temperatura y humedad, sensores de humedad del suelo capacitivos y un módulo de relé para controlar las bombas de agua. Toda la configuración está alimentada por una fuente de 5V con respaldo de batería."
+                },
+                "software": {
+                    "title": "Arquitectura de Software",
+                    "content": "La aplicación móvil se comunica con el ESP32 a través del protocolo MQTT, permitiendo el monitoreo en tiempo real de los datos de los sensores y el control remoto de los horarios de riego. El sistema incluye riego automático basado en umbrales de humedad del suelo y pronósticos meteorológicos."
+                },
+                "future": {
+                    "title": "Mejoras Futuras",
+                    "content": "Las mejoras futuras incluyen integración de paneles solares, aprendizaje automático para horarios de riego óptimos y soporte para múltiples zonas de jardín con monitoreo individual de humedad."
+                }
+            }
+        },
+        "chatconnect": {
+            "title": "Construyendo ChatConnect: Mensajería en Tiempo Real con Cifrado E2E",
+            "intro": "Una inmersión profunda en la creación de una aplicación de chat segura en tiempo real con cifrado de extremo a extremo, videollamadas WebRTC y mensajería WebSocket.",
+            "author": "Johan Johansson",
+            "dateNexus": "el",
+            "date": "20 de febrero de 2024",
+            "toc": [
+                {
+                    "name": "Descripción General",
+                    "link": "#overview"
+                },
+                {
+                    "name": "Implementación de Seguridad",
+                    "link": "#security"
+                },
+                {
+                    "name": "Comunicación en Tiempo Real",
+                    "link": "#realtime"
+                },
+                {
+                    "name": "Videollamadas con WebRTC",
+                    "link": "#webrtc"
+                },
+                {
+                    "name": "Lecciones Aprendidas",
+                    "link": "#lessons"
+                }
+            ],
+            "sections": {
+                "overview": {
+                    "title": "Descripción General",
+                    "content": "Construir una aplicación de chat segura en tiempo real requiere una consideración cuidadosa de la seguridad, escalabilidad y experiencia del usuario. Este proyecto implementa cifrado de extremo a extremo, WebRTC para videollamadas peer-to-peer y WebSocket para mensajería instantánea."
+                },
+                "security": {
+                    "title": "Implementación de Seguridad",
+                    "content": "La aplicación utiliza el Protocolo Signal para cifrado de extremo a extremo, asegurando que solo el remitente y el destinatario puedan leer los mensajes. Las claves privadas nunca salen del dispositivo, y el servidor solo enruta datos cifrados sin acceso al contenido de los mensajes."
+                },
+                "realtime": {
+                    "title": "Comunicación en Tiempo Real",
+                    "content": "Las conexiones WebSocket mantienen conexiones persistentes para la entrega instantánea de mensajes. Redis pub/sub maneja la distribución de mensajes a través de múltiples instancias de servidor, asegurando escalabilidad y confiabilidad."
+                },
+                "webrtc": {
+                    "title": "Videollamadas con WebRTC",
+                    "content": "WebRTC permite videollamadas directas peer-to-peer sin enrutar a través del servidor, reduciendo la latencia y la carga del servidor. La aplicación incluye servidores STUN/TURN para el cruce de NAT y la confiabilidad de la conexión."
+                },
+                "lessons": {
+                    "title": "Lecciones Aprendidas",
+                    "content": "Los mayores desafíos fueron manejar las fallas de conexión con elegancia y optimizar para redes móviles con ancho de banda variable. Implementar colas de mensajes y lógica de reintento fue esencial para una experiencia de usuario fluida."
+                }
+            }
+        },
+        "smarthome": {
+            "title": "Dashboard SmartHome: Control IoT Unificado",
+            "intro": "Creando un dashboard unificado para gestionar dispositivos domóticos de diferentes fabricantes usando MQTT, React y Node.js.",
+            "author": "Johan Johansson",
+            "dateNexus": "el",
+            "date": "10 de enero de 2024",
+            "toc": [
+                {
+                    "name": "Objetivos del Proyecto",
+                    "link": "#goals"
+                },
+                {
+                    "name": "Stack Tecnológico",
+                    "link": "#stack"
+                },
+                {
+                    "name": "Integración de Dispositivos",
+                    "link": "#integration"
+                },
+                {
+                    "name": "Reglas de Automatización",
+                    "link": "#automation"
+                },
+                {
+                    "name": "Monitoreo de Energía",
+                    "link": "#energy"
+                },
+                {
+                    "name": "Próximos Pasos",
+                    "link": "#next"
+                }
+            ],
+            "sections": {
+                "goals": {
+                    "title": "Objetivos del Proyecto",
+                    "content": "El objetivo era crear un dashboard unificado para gestionar todos los dispositivos domóticos de diferentes fabricantes, evitando la fragmentación de tener múltiples aplicaciones para luces, termostatos y cámaras de seguridad."
+                },
+                "stack": {
+                    "title": "Stack Tecnológico",
+                    "content": "El dashboard está construido con React para el frontend y Node.js para el backend. El broker MQTT maneja la comunicación con dispositivos IoT, mientras que una base de datos PostgreSQL almacena estados de dispositivos, reglas de automatización y datos históricos."
+                },
+                "integration": {
+                    "title": "Integración de Dispositivos",
+                    "content": "El sistema soporta múltiples protocolos incluyendo MQTT, Zigbee y APIs HTTP. Los adaptadores personalizados traducen comandos específicos de dispositivos en una interfaz unificada, facilitando agregar soporte para nuevos dispositivos."
+                },
+                "automation": {
+                    "title": "Reglas de Automatización",
+                    "content": "Los usuarios pueden crear reglas de automatización personalizadas usando un editor de flujo visual. Las reglas pueden basarse en tiempo, activarse por lecturas de sensores o activarse por cambios de estado de dispositivos. Escenarios complejos como 'apagar todas las luces al salir de casa' son fáciles de configurar."
+                },
+                "energy": {
+                    "title": "Monitoreo de Energía",
+                    "content": "El dashboard incluye seguimiento de consumo de energía en tiempo real y análisis históricos. Los usuarios pueden identificar dispositivos que consumen mucha energía y optimizar sus patrones de uso para reducir las facturas de electricidad."
+                },
+                "next": {
+                    "title": "Próximos Pasos",
+                    "content": "El desarrollo futuro incluye integración de control por voz, aprendizaje automático para automatización predictiva y características de seguridad mejoradas como detección de anomalías para comportamiento inusual de dispositivos."
+                }
+            }
+        },
+        "budgettracker": {
+            "title": "BudgetTracker: Gestión de Finanzas Personales",
+            "intro": "Construyendo una herramienta integral de finanzas personales con seguimiento de gastos, planificación de presupuestos y visualizaciones de datos perspicaces.",
+            "author": "Johan Johansson",
+            "dateNexus": "el",
+            "date": "5 de diciembre de 2023",
+            "toc": [
+                {
+                    "name": "Por Qué Construí BudgetTracker",
+                    "link": "#why"
+                },
+                {
+                    "name": "Características Principales",
+                    "link": "#features"
+                },
+                {
+                    "name": "Arquitectura Técnica",
+                    "link": "#architecture"
+                },
+                {
+                    "name": "Visualización de Datos",
+                    "link": "#visualization"
+                },
+                {
+                    "name": "Seguridad y Privacidad",
+                    "link": "#security"
+                },
+                {
+                    "name": "Mejoras Futuras",
+                    "link": "#future"
+                }
+            ],
+            "sections": {
+                "why": {
+                    "title": "Por Qué Construí BudgetTracker",
+                    "content": "Gestionar las finanzas personales puede ser abrumador con múltiples cuentas, suscripciones y gastos diarios. Construí BudgetTracker para simplificar el seguimiento de gastos y proporcionar información útil sobre los patrones de gasto."
+                },
+                "features": {
+                    "title": "Características Principales",
+                    "content": "La aplicación incluye categorización automática de gastos, detección de transacciones recurrentes, alertas de presupuesto y límites de gasto personalizables. Los usuarios pueden crear múltiples presupuestos para diferentes categorías como comestibles, entretenimiento y transporte."
+                },
+                "architecture": {
+                    "title": "Arquitectura Técnica",
+                    "content": "Construido con Angular para el frontend y backend Node.js/Express, BudgetTracker utiliza MySQL para almacenamiento de datos relacionales. La arquitectura soporta actualizaciones en tiempo real y sincronización a través de múltiples dispositivos."
+                },
+                "visualization": {
+                    "title": "Visualización de Datos",
+                    "content": "Los gráficos interactivos construidos con Chart.js ayudan a los usuarios a comprender sus hábitos de gasto. Las comparaciones mensuales, desgloses por categoría y análisis de tendencias facilitan la identificación de áreas de mejora."
+                },
+                "security": {
+                    "title": "Seguridad y Privacidad",
+                    "content": "Todos los datos financieros están cifrados en reposo y en tránsito. La aplicación sigue las mejores prácticas de seguridad incluyendo hash de contraseñas con bcrypt, autenticación JWT y gestión segura de sesiones."
+                },
+                "future": {
+                    "title": "Mejoras Futuras",
+                    "content": "Las características planificadas incluyen integración de cuentas bancarias a través de la API de Plaid, recomendaciones de ahorro automatizadas usando aprendizaje automático y presupuestos colaborativos para familias o compañeros de cuarto."
+                }
+            }
+        }
+    },
+    "credits": {
+        "licenseName": "Licencia",
+        "intro": "Para crear esta web he usado librerías, fuentes, imágenes e inspiración de terceras personas. Aquí está la lista:",
+        "elements": [
+            {
+                "header": "Librerías",
+                
+                "items": [
+                    {
+                        "header": "GSAP (GreenSock Animation Platform)",
+                        "description": "GSAP es una librería de JavaScript para crear animaciones de forma eficiente y compatible con los principales navegadores.",
+                        "license": "GreenSock's standard \"no charge\" license",
+                        "link": "https://github.com/greensock/GSAP"
+                    },
+                    {
+                        "header": "lenis",
+                        "description": "Lenis es una librería ligera, robusta y eficiente para suavizar el scrolling.",
+                        "license": "MIT License",
+                        "link": "https://github.com/darkroomengineering/lenis"
+                    },
+                    {
+                        "header": "Slim Select 2",
+                        "description": "Slim Select 2 es una librería de JS simple y sin dependencias para crear elementos desplegables (selects).",
+                        "license": "MIT License",
+                        "link": "https://github.com/brianvoe/slim-select"
+                    },
+                    {
+                        "header": "reveal.js (El Framework de Presentación HTML)",
+                        "description": "reveal.js es un framework de presentación HTML de código abierto.",
+                        "license": "MIT License",
+                        "link": "https://github.com/hakimel/reveal.js"
+                    },
+                    {
+                        "header": "Glider.js",
+                        "description": "Una lista de desplazamiento nativo increíblemente rápida.",
+                        "license": "MIT License",
+                        "link": "https://github.com/NickPiscitelli/Glider.js"
+                    }
+                ]
+            },
+            {
+                "header": "Fuentes",
+                "items": [
+                    {
+                        "header": "Work Sans",
+                        "description": "Work Sans es una familia tipográfica basada en el primer estilo grotesco, creada (o dirigida) por Wei Huang.",
+                        "license": "Open Font License",
+                        "link": "https://github.com/weiweihuanghuang/Work-Sans"
+                    },
+                    {
+                        "header": "Archivo Black",
+                        "description": "Archivo Black es una familia tipográfica grotesca sans serif de Omnibus-Type. Fue diseñada originalmente para su uso en elementos destacados y titulares.",
+                        "license": "Open Font License",
+                        "link": "https://github.com/Omnibus-Type"
+                    }                    
+                ]
+            },
+            {
+                "header": "Imágenes",
+                "items": [
+                    {
+                        "header": "Font Awesome Icons",
+                        "description": "He utilizado los siguientes iconos de fontawesome, en formato svg: [fa-brands fa-github], [fa-solid fa-pencil], [fa-solid fa-house], [fa-solid fa-circle-up], [fa-file-powerpoint], y [fa-bookmark].",
+                        "license": "Font Awesome Free License",
+                        "link": "https://fontawesome.com/"
+                    },
+                    {
+                        "header": "Icono \"Typography\" por Justin Blake",
+                        "description": "También he utilizado el icono Typography por Justin Blake, disponible en thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/typography-2236845/"
+                    },
+                    {
+                        "header": "Icono \"home automation\" por Daniel T.",
+                        "description": "...y el icono \"home automation\" por Daniel T., también de thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/home-automation-5024813/"
+                    },
+                    {
+                        "header": "Icono \"web\" por Ilyas Aji Furqon",
+                        "description": "...y el icono \"web\" por Ilyas Aji Furqon, también de thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/web-7814345/"
+                    },
+                    {
+                        "header": "Icono \"jogger\" por Maan Icons",
+                        "description": "...y el icono \"jogger\" por Maan Icons, también de thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/jogger-7582291/"
+                    },
+                    {
+                        "header": "Icono \"Pump\" por icon trip",
+                        "description": "...y el icono \"Pump\" por icon trip, también de thenounproject.com.",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/pump-7279811/"
+                    }
+                ]
+            },
+            {
+                "header": "Inspiración",
+                "items": [
+                    {
+                        "header": "On-Scroll Animation Ideas for Sticky Sections",
+                        "description": "Post, demo, y código por Manoela Ilic, publicado en tympanus.net/codrops",
+                        "license": "MIT License",
+                        "link": "https://tympanus.net/codrops/2024/01/31/on-scroll-animation-ideas-for-sticky-sections/"
+                    },
+                    {
+                        "header": "Código de Codepen por Ana Travas",
+                        "description": "La animación CSS de ruido estático de fondo, aunque con una imagen base diferente, proviene de este codepen de Ana Travas, de donde también descubrí lo bien que se ve la fuente Archivo Black en titulares. Ana Travas hace un gran trabajo de diseño gráfico original, que nunca ha estado entre mis fortalezas. ¡Te animo a visitar su trabajo! Sus sitios vinculados son, al momento de escribir esto, <a class=\"underline-decoration\" href=\"https://anatravas.com/\">anatravas.me</a>, <a class=\"underline-decoration\" href=\"https://animista.net\">animista.net</a>, y <a class=\"underline-decoration\" href=\"https://svgartista.net/\">svgartista.net</a>.",
+                        "license": "Código compartido públicamente considerado de Dominio Público",
+                        "link": "https://codepen.io/anatravas/pen/vyOwOZ"
+                    }
+                ]
+            }
+        ]
+    },
+    "footer": {
+        "links":  [
+            {
+                "name": "Librerías y Créditos",
+                "url": "/es/credits"
+            }
+        ]
+    }
+}

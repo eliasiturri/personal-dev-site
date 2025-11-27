@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="<%= language %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= project %> Presentation</title>
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/assets/css/slimselect.min.css" rel="stylesheet">
+    <script src="/assets/js/libs/slimselect.min.js"></script>
+    <link href="/assets/css/select.css" rel="stylesheet">
+    <script defer src="/assets/js/language-switcher.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #191919;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: #191919;
+            padding: 0;
+            font-family: "Work Sans", sans-serif;
+            font-size: 16px;
+        }
+        
+        header .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 0;
+        }
+        
+        .navbar {
+            margin: 0;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+            margin-bottom: 0;
+        }
+        
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar-nav {
+            margin: 0 10px 3px 10px;
+        }
+        
+        .navbar-nav span,
+        .navbar-nav a {
+            color: #fff;
+            font-family: "Work Sans", sans-serif;
+            font-size: 16px;
+            padding-bottom: 1px;
+        }
+        
+        .navbar ul li:last-of-type {
+            margin-right: 20px;
+        }
+        
+        .reveal {
+            margin-top: 50px;
+            height: calc(100vh - 50px) !important;
+        }
+        
+        /* Remove conflicting styles - let presentation CSS handle these */
+        /* .reveal .slides section styles removed to prevent centering */
+        /* .reveal .slide-title, .slide-content styles removed - handled by presentation */
+    </style>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header-outside-main-page'); %>
+    </header>
+    
+    <div class="reveal">
+        <div class="slides" id="presentation-slides">
+            <!-- Slides will be loaded here -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
+    <script>
+        // Fetch and inject slides from the generated HTML
+        fetch('/presentation/<%= project %>_<%= language %>.html')
+            .then(response => response.text())
+            .then(html => {
+                // Parse the HTML and extract slides and styles
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const slides = doc.querySelector('.slides');
+                const styles = doc.querySelectorAll('style');
+                
+                // Inject custom styles from the presentation
+                styles.forEach(style => {
+                    const styleElement = document.createElement('style');
+                    styleElement.textContent = style.textContent;
+                    document.head.appendChild(styleElement);
+                });
+                
+                if (slides) {
+                    document.getElementById('presentation-slides').innerHTML = slides.innerHTML;
+                }
+                
+                // Extract modal and tooltip elements
+                const modal = doc.getElementById('mediaModal');
+                const tooltip = doc.getElementById('mediaTooltip');
+                if (modal) document.body.appendChild(modal.cloneNode(true));
+                if (tooltip) document.body.appendChild(tooltip.cloneNode(true));
+                
+                // Extract and execute scripts from the presentation
+                const scripts = doc.querySelectorAll('script');
+                scripts.forEach(script => {
+                    if (script.textContent && !script.src) {
+                        const scriptElement = document.createElement('script');
+                        scriptElement.textContent = script.textContent;
+                        document.body.appendChild(scriptElement);
+                    }
+                });
+                
+                // Initialize Reveal.js with presentation settings
+                const revealScript = Array.from(scripts).find(s => s.textContent.includes('Reveal.initialize'));
+                if (!revealScript) {
+                    Reveal.initialize({
+                        hash: true,
+                        transition: 'slide',
+                        backgroundTransition: 'fade',
+                        controls: true,
+                        progress: true,
+                        center: false,
+                        width: 1920,
+                        height: 1080,
+                        margin: 0.04,
+                        minScale: 0.2,
+                        maxScale: 2.0,
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error loading presentation:', error);
+                document.getElementById('presentation-slides').innerHTML = 
+                    '<section><h2>Error loading presentation</h2><p>Please try again later.</p></section>';
+            });
+    </script>
+</body>
+</html>

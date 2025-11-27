@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+    <%- include('../partials/head-outside-main-page'); %>
+</head>
+<body class="container">
+    <div class="main-wrapper">
+        <div class="noise-wrapper">
+            <div class="noise"></div>
+
+        </div>
+
+        <div class="content-wrapper">
+            <div class="header-wrapper">
+                <header class="mw-o">
+                    <%- include('../partials/header-outside-main-page'); %>
+                </header>
+            </div>            
+            <main class="mw-o">
+                <div class="content content--highlight content--intro work-sans-eb-800">
+                    <p class="text-xl text-align-center"><%= t("credits.intro") %></p> 
+                </div>      
+
+                <% t("credits.elements", { returnObjects: true }).map(element => { %>   
+                    <div class="content content--highlight content--intro work-sans-eb-800">
+                        <h1 class="text-xl"><%= element.header %></h1>
+                        <% element.items.map(item => { %>  
+                            <h2 class="credit-el">
+                                <a href="<%= item.link %>"><%= item.header %></a>
+                            </h2>    
+                            <p><%- item.description %></p>  
+                            <div class="credits-license">
+                                <span><%= t("credits.licenseName") %>:</span>
+                                <span><%= item.license %></span>
+                            </div>
+                        <% }); %>
+                    </div>
+                <% }); %>
+            </main>
+            
+            <footer class="mw-o">
+                <%- include('../partials/footer'); %>
+            </footer>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

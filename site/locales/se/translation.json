@@ -1,0 +1,798 @@
+{
+    "language": "se",
+    "companyName": "Johan Johansson",
+    "greeting": "Hello, World!",
+    "siteTitle": "Johan Johansson",    
+    "nav": [
+        {
+            "idx": 0,
+            "name": "Om mig",
+            "samePage": true,
+            "link": "#about",
+            "linkNotFromFrontpage": "/se/#about"
+        },
+        {
+            "idx": 1,
+            "name": "Projekt",
+            "samePage": true,
+            "link": "#projects",
+            "linkNotFromFrontpage": "/se/#projects"
+        },
+        {
+            "idx": 2,
+            "name": "Blogginlägg",
+            "samePage": false,
+            "link": "posts",
+            "linkNotFromFrontpage": "/se/posts"
+        },
+        {
+            "idx": 3,
+            "name": "Kontakt",
+            "samePage": true,
+            "link": "#contact",
+            "linkNotFromFrontpage": "/se/#contact"
+        }
+    ],    
+    "about": {
+        "title": "Hej.",
+        "content": "Jag heter Johan — en passionerad full-stack utvecklare som älskar att förvandla idéer till eleganta lösningar. Jag specialiserar mig på moderna webbteknologier och tycker om att bygga intuitiva användarupplevelser. Open-source entusiast och alltid ivrig att samarbeta på spännande projekt. Låt oss skapa något fantastiskt tillsammans!"
+    },
+    "slider": {
+        "headline": "Snabb Översikt.",
+        "subheader": "eller fortsätt scrolla nedåt",
+        "goUpLink": "Gå upp till Snabb Översikt ↑"
+    },
+    "contact": {
+        "header": "Kontakt mig.",
+        "intro": "Jag lägger helst inte min e-postadress här, men du kan använda formuläret för att skicka ett meddelande till mig. Jag hör av mig!",
+        "name": "Ditt namn...",
+        "email": "Din e-post...",
+        "subject": "Ämne",
+        "message": "Ditt meddelande...",
+        "submit": "Skicka",
+        "reset": "Rensa",
+        "success": "Ditt meddelande har skickats!",
+        "error": "Något gick fel, försök igen senare.",
+        "fwdError": "Ditt meddelande kunde inte skickats, med det har sparats i min databas. Det kan tag lite mör tid innan jag svarar. Tack för ditt tålamod!",
+        "tooManyRequests": "För många förfrågningar fröm din IP-adress under den senaste timmen, försök igen senare."
+    },
+    "credits": {
+        "licenseName": "Licens",
+        "intro": "För att bygga denna webbplats har jag använt bibliotek, typsnitt, bilder och inspiration från andra parter. Här är listan:",
+        "elements": [
+            {
+                "header": "Bibliotek",
+                
+                "items": [
+                    {
+                        "header": "GSAP (GreenSock Animation Platform)",
+                        "description": "GSAP är ett JavaScript-bibliotek för att skapa högpresterande animationer som fungerar i alla större webbläsare.",
+                        "license": "GreenSock's standard \"no charge\" license",
+                        "link": "https://github.com/greensock/GSAP"
+                    },
+                    {
+                        "header": "lenis",
+                        "description": "Lenis är ett lätt, robust och presterande mjukt rullningsbibliotek.",
+                        "license": "MIT License",
+                        "link": "https://github.com/darkroomengineering/lenis"
+                    },
+                    {
+                        "header": "Slim Select 2",
+                        "description": "Slim Select 2 är ett enkelt, beroendefritt, valt bibliotek för JS.",
+                        "license": "MIT License",
+                        "link": "https://github.com/brianvoe/slim-select"
+                    },
+                    {
+                        "header": "reveal.js (HTML-presentationsramverket)",
+                        "description": "reveal.js är ett öppen källkod HTML-presentationsramverk.",
+                        "license": "MIT License",
+                        "link": "https://github.com/hakimel/reveal.js"
+                    },
+                    {
+                        "header": "Glider.js",
+                        "description": "En blixtsnabb native scrolling list.",
+                        "license": "MIT License",
+                        "link": "https://github.com/NickPiscitelli/Glider.js"
+                    }
+                ]
+            },
+            {
+                "header": "Fonts",
+                "items": [
+                    {
+                        "header": "Work Sans",
+                        "description": "Work Sans är en typsnittsfamilj löst baserad på tidiga grotesker, skapad (eller ledd) av Wei Huang.",
+                        "license": "Open Font License",
+                        "link": "https://github.com/weiweihuanghuang/Work-Sans"
+                    },
+                    {
+                        "header": "Archivo Black",
+                        "description": "Archivo är en grotesk sans serif typsnittsfamilj från Omnibus-Type. Den designades ursprungligen för höjdpunkter och rubriker.",
+                        "license": "Open Font License",
+                        "link": "https://github.com/Omnibus-Type"
+                    }                    
+                ]
+            },
+            {
+                "header": "Images",
+                "items": [
+                    {
+                        "header": "Font Awesome Icons",
+                        "description": "Jag har använt följande fontawesome ikoner, i svg-format: [fa-brands fa-github], [fa-solid fa-pencil], [fa-solid fa-house], [fa-solid fa-circle-up], [fa-file-powerpoint] och [fa-bookmark].",
+                        "license": "Font Awesome Free License",
+                        "link": "https://fontawesome.com/"
+                    },
+                    {
+                        "header": "\"Typography\" ikon av Justin Blake",
+                        "description": "Jag har också använt Typography-ikonen av Justin Blake, tillgänglig på thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/typography-2236845/"
+                    },
+                    {
+                        "header": "\"home automation\" ikon av Daniel T.",
+                        "description": "...och \"home automation\"-ikonen av Daniel T., också från thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/home-automation-5024813/"
+                    },
+                    {
+                        "header": "\"web\" ikon av Ilyas Aji Furqon",
+                        "description": "...och \"web\"-ikonen av Ilyas Aji Furqon, också från thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/web-7814345/"
+                    },
+                    {
+                        "header": "\"jogger\" ikon av Maan Icons",
+                        "description": "...och \"jogger\"-ikonen av Maan Icons, också från thenounproject.com...",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/jogger-7582291/"
+                    },
+                    {
+                        "header": "\"Pump\" ikon av icon trip",
+                        "description": "...och \"Pump\"-ikonen av icon trip, också från thenounproject.com.",
+                        "license": "Creative Commons Icon",
+                        "link": "https://thenounproject.com/icon/pump-7279811/"
+                    }
+                ]
+            },
+            {
+                "header": "Inspiration",
+                "items": [
+                    {
+                        "header": "On-Scroll Animation Ideas for Sticky Sections",
+                        "description": "Blogginlägg, demo och kod av Manoela Ilic på tympanus.net/codrops",
+                        "license": "MIT License",
+                        "link": "https://tympanus.net/codrops/2024/01/31/on-scroll-animation-ideas-for-sticky-sections/"
+                    },
+                    {
+                        "header": "Codepen kod av Ana Travas",
+                        "description": "Den svaga statiska brusbakgrunden CSS-animationen, även om den har en annan basbild, kommer från denna codepen av Ana Travas, varifrån jag också fick se hur bra Archivo Black-typsnittet ser ut i rubriker. Ana Travas gör fantastiskt original grafiskt designarbete, vilket aldrig har varit bland mina styrkor. Kolla in henne! Hennes länkade webbplatser är, vid tidpunkten för att skriva detta <a class=\"underline-decoration\" href=\"https://anatravas.com/\">anatravas.me</a>, <a class=\"underline-decoration\" href=\"https://animista.net\">animista.net</a>, och <a class=\"underline-decoration\" href=\"https://svgartista.net/\">svgartista.net</a>.",
+                        "license": "Offentligt delad kod betraktad som Public Domain",
+                        "link": "https://codepen.io/anatravas/pen/vyOwOZ"
+                    }
+                ]
+            }
+        ]
+    },    
+    "projects": [
+        {
+            "title": "TaskFlow Pro",
+            "description": "En modern uppgiftshanteringsapplikation med realtidssamarbetsfunktioner. Byggd med Vue.js och Node.js, erbjuder den kanban-tavlor, tidsspårning och teamanalyser.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Vue.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },                
+                {
+                    "name": "Docker",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Besök webbplats",
+                    "icon": "website",
+                    "url": "https://example.com"
+                },
+                {
+                    "name": "Visa på GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/taskflow"
+                }
+            ]
+        },
+        {
+            "title": "WeatherNow API",
+            "description": "En RESTful API-tjänst som tillhandahåller realtidsvaderdata med historisk analys. Inkluderar platsbaserade prognoser, allvarliga vädervarningar och anpassbar dataaggregering.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Vue.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Python",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Besök webbplats",
+                    "icon": "website",
+                    "url": "https://example.com"
+                },
+                {
+                    "name": "Visa på GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/weathernow"
+                }
+            ]
+        },
+        {
+            "title": "FitTrack Mobile",
+            "description": "En multiplattform träningsspårningsapp med träningsplaner, näringsloggning och framstegsvisualisering. Synkroniserar data mellan enheter och integrerar med populära wearables.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "React Native",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "MongoDB",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Besök webbplats",
+                    "icon": "website",
+                    "url": "https://example.com"
+                },
+                {
+                    "name": "Visa på GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/fittrack"
+                }
+            ]
+        },
+        {
+            "title": "CodeSnippet Manager",
+            "description": "Ett utvecklarverktyg för att organisera och dela kodavsnitt med syntaxmarkering, taggning och sökfunktionalitet. Stöder teamsamarbete och versionskontrollintegration.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Python",
+                    "style": "border"
+                },
+                {
+                    "name": "Flask",
+                    "style": "border"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Webbplats offline",
+                    "icon": "website",
+                    "disabled": true,
+                    "url": ""
+                },
+                {
+                    "name": "Visa på GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/codesnippet"
+                }
+            ]
+        },
+        {
+            "title": "SmartHome Dashboard",
+            "description": "En centraliserad instrumentpanel för att hantera IoT-enheter och hemautomationssystem. Inkluderar realtidsövervakning, anpassade automationsregler och energiförbrukningsanalys.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Hardware",
+                    "style": "solid"
+                },
+                {
+                    "name": "React",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "MQTT",
+                    "style": "border"
+                },
+                {
+                    "name": "Raspberry Pi",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Visa blogginlägg",
+                    "icon": "post",
+                    "url": "/se/posts/smarthome"
+                },
+                {
+                    "name": "Visa på GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/smarthome"
+                }
+            ]
+        },
+        {
+            "title": "Portfolio Webbplatsmall",
+            "description": "Denna webbplatsmall - statisk, snabb och avsiktligt enkel. Använder EJS-mallmotorn, inkluderar i18n-stöd och presenterar reveal.js för presentationer.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "reveal.js",
+                    "style": "border"
+                },
+                {
+                    "name": "EJS",
+                    "style": "border"
+                }
+            ],
+            "preview_image": [
+                "/assets/images/quick-preview/dev-site.png"
+            ],
+            "preview_descriptions": [
+                "Snabb översikt: minimal flerspråkig portfolio mall med blogginlägg, kontaktformulär (begränsning & sanitering), projekt showcase och reveal.js presentationer."
+            ],
+            "links": [
+                {
+                    "name": "Visa presentation",
+                    "icon": "presentation",
+                    "url": "/se/presentation/portfolio"
+                },
+                {
+                    "name": "Visa på GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/dev-site"
+                }
+            ]
+        },
+        {
+            "title": "RecipeBox",
+            "description": "En digital recepthanterare med måltidsplanering, generering av inköpslistor och näringsinformation. Importera recept från webbplatser, skala ingredienser och dela med familjen.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Vue.js",
+                    "style": "border"
+                },
+                {
+                    "name": "Firebase",
+                    "style": "border"
+                },
+                {
+                    "name": "PWA",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Besök webbplats",
+                    "icon": "website",
+                    "url": "https://example.com"
+                },
+                {
+                    "name": "Visa på GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/recipebox"
+                }
+            ]
+        },
+        {
+            "title": "BudgetTracker",
+            "description": "Personligt ekonomihanteringsverktyg med utgiftsspårning, budgetplanering och målsättning för ekonomiska mål. Visualisera utgiftsmönster med interaktiva diagram och rapporter.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "Angular",
+                    "style": "border"
+                },
+                {
+                    "name": "Node.js",
+                    "style": "border"
+                },
+                {
+                    "name": "MySQL",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Visa blogginlägg",
+                    "icon": "post",
+                    "url": "/se/posts/budgettracker"
+                },
+                {
+                    "name": "Visa på GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/budgettracker"
+                }
+            ]
+        },
+        {
+            "title": "ChatConnect",
+            "description": "Realtidschattapplikation med end-to-end-kryptering, gruppkonversationer, fildelning och videosamtal. Byggd med WebRTC och WebSocket-teknik.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Software",
+                    "style": "solid"
+                },
+                {
+                    "name": "React",
+                    "style": "border"
+                },
+                {
+                    "name": "WebRTC",
+                    "style": "border"
+                },
+                {
+                    "name": "Socket.io",
+                    "style": "border"
+                },
+                {
+                    "name": "Redis",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Webbplats offline",
+                    "icon": "website",
+                    "disabled": true,
+                    "url": ""
+                },
+                {
+                    "name": "Visa på GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/chatconnect"
+                }
+            ]
+        },
+        {
+            "title": "GardenBot",
+            "description": "Automatiserat trädgårdsövervakningssystem med ESP32 och sensorer. Spårar markfuktighet, temperatur och ljusnivåer. Vattnar växter automatiskt och skickar varningar via mobilapp.",
+            "image_url": "/assets/images/projects/dev-site-white.svg",
+            "tags": [
+                {
+                    "name": "Hardware",
+                    "style": "solid"
+                },
+                {
+                    "name": "Arduino",
+                    "style": "border"
+                },
+                {
+                    "name": "ESP32",
+                    "style": "border"
+                },
+                {
+                    "name": "IoT",
+                    "style": "border"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Besök webbplats",
+                    "icon": "website",
+                    "url": "https://gardenbot.example.com"
+                },
+                {
+                    "name": "Visa blogginlägg",
+                    "icon": "post",
+                    "url": "/se/posts/gardenbot"
+                },
+                {
+                    "name": "Visa på GitHub",
+                    "icon": "github",
+                    "url": "https://github.com/yourusername/gardenbot"
+                }
+            ]
+        }                
+    ],
+    "posts": {
+        "header": "Senaste blogginlägg.",
+        "intro": "Utforska min resa genom mjukvaruutveckling och hårdvaruexperiment. Från webbappar till IoT-projekt, det finns alltid något nytt att lära sig!",
+        "link": "/se/posts",
+        "tocName": "Innehållsförteckning",
+        "items": [
+            {
+                "title": "Bygga en Smart Trädgård med ESP32",
+                "intro": "Hur jag automatiserade mitt trädgårdsbevattningssystem med ESP32, fuktighetssensorer och en mobilapp för fjärrövervakning och kontroll.",
+                "date": "15 mars 2024",
+                "link": "/se/posts/gardenbot"
+            },
+            {
+                "title": "Skapa en Realtidschattapplikation",
+                "intro": "En djupdykning i att bygga en säker chattapp med WebRTC-videosamtal, end-to-end-kryptering och WebSocket-kommunikation.",
+                "date": "22 februari 2024",
+                "link": "/se/posts/chatconnect"
+            },
+            {
+                "title": "Utveckling av SmartHome Dashboard",
+                "intro": "Bygga en centraliserad IoT-instrumentpanel för hemautomation. Styr lampor, termostater och säkerhetskameror från ett gränssnitt.",
+                "date": "18 januari 2024",
+                "link": "/se/posts/smarthome"
+            }
+        ]
+    },
+    "fullposts": {
+        "gardenbot": {
+            "title": "Bygga en Smart Trädgård med ESP32",
+            "intro": "Hur jag automatiserade mitt trädgårdsbevattningssystem med ESP32, fuktighetssensorer och en mobilapp för fjärrövervakning och kontroll.",
+            "author": "Johan Johansson",
+            "dateNexus": "den",
+            "date": "15 mars 2024",
+            "toc": [
+                {
+                    "name": "Introduktion",
+                    "link": "#introduction"
+                },
+                {
+                    "name": "Hårdvarukomponenter",
+                    "link": "#hardware"
+                },
+                {
+                    "name": "Programvaruarkitektur",
+                    "link": "#software"
+                },
+                {
+                    "name": "Framtida Förbättringar",
+                    "link": "#future"
+                }
+            ],
+            "sections": {
+                "introduction": {
+                    "title": "Introduktion",
+                    "content": "I denna artikel går jag igenom hur man bygger ett automatiserat trädgårdsövervaknings- och bevattningssystem med hjälp av en ESP32-mikrokontroller, markfuktighetssensorer och en mobilapplikation för fjärrkontroll."
+                },
+                "hardware": {
+                    "title": "Hårdvarukomponenter",
+                    "content": "Systemet använder ESP32 för sina inbyggda WiFi-funktioner, DHT22-sensorer för temperatur och luftfuktighet, kapacitiva markfuktighetssensorer och en relämodul för att styra vattenpumpar. Hela installationen drivs av en 5V-strömförsörjning med batteribackup."
+                },
+                "software": {
+                    "title": "Programvaruarkitektur",
+                    "content": "Mobilappen kommunicerar med ESP32 via MQTT-protokollet, vilket möjliggör realtidsövervakning av sensordata och fjärrkontroll av bevattningsscheman. Systemet inkluderar automatisk bevattning baserad på markfuktighetströsklar och väderprognoser."
+                },
+                "future": {
+                    "title": "Framtida Förbättringar",
+                    "content": "Framtida förbättringar inkluderar integration av solpaneler, maskininlärning för optimala bevattningsscheman och stöd för flera trädgårdszoner med individuell fuktighetsövervakning."
+                }
+            }
+        },
+        "chatconnect": {
+            "title": "Bygga ChatConnect: Realtidsmeddelanden med E2E-kryptering",
+            "intro": "En djupdykning i att skapa en säker realtidschattapplikation med end-to-end-kryptering, WebRTC-videosamtal och WebSocket-meddelanden.",
+            "author": "Johan Johansson",
+            "dateNexus": "den",
+            "date": "20 februari 2024",
+            "toc": [
+                {
+                    "name": "Översikt",
+                    "link": "#overview"
+                },
+                {
+                    "name": "Säkerhetsimplementering",
+                    "link": "#security"
+                },
+                {
+                    "name": "Realtidskommunikation",
+                    "link": "#realtime"
+                },
+                {
+                    "name": "Videosamtal med WebRTC",
+                    "link": "#webrtc"
+                },
+                {
+                    "name": "Lärdomar",
+                    "link": "#lessons"
+                }
+            ],
+            "sections": {
+                "overview": {
+                    "title": "Översikt",
+                    "content": "Att bygga en säker realtidschattapplikation kräver noggrann övervägande av säkerhet, skalbarhet och användarupplevelse. Detta projekt implementerar end-to-end-kryptering, WebRTC för peer-to-peer-videosamtal och WebSocket för snabbmeddelanden."
+                },
+                "security": {
+                    "title": "Säkerhetsimplementering",
+                    "content": "Applikationen använder Signal Protocol för end-to-end-kryptering, vilket säkerställer att endast avsändaren och mottagaren kan läsa meddelanden. Privata nycklar lämnar aldrig enheten, och servern dirigerar endast krypterad data utan tillgång till meddelandeinnehåll."
+                },
+                "realtime": {
+                    "title": "Realtidskommunikation",
+                    "content": "WebSocket-anslutningar upprätthåller persistenta anslutningar för omedelbar meddelandeleverans. Redis pub/sub hanterar meddelandedistribution över flera serverinstanser, vilket säkerställer skalbarhet och tillförlitlighet."
+                },
+                "webrtc": {
+                    "title": "Videosamtal med WebRTC",
+                    "content": "WebRTC möjliggör direkta peer-to-peer-videosamtal utan att dirigera genom servern, vilket minskar latens och serverbelastning. Applikationen inkluderar STUN/TURN-servrar för NAT-traversering och anslutningspålitlighet."
+                },
+                "lessons": {
+                    "title": "Lärdomar",
+                    "content": "De största utmaningarna var att hantera anslutningsfel på ett elegant sätt och optimera för mobilnätverk med varierande bandbredd. Implementering av meddelandeköer och omprövningslogik var avgörande för en smidig användarupplevelse."
+                }
+            }
+        },
+        "smarthome": {
+            "title": "SmartHome Dashboard: Enhetlig IoT-kontroll",
+            "intro": "Skapa en enhetlig instrumentpanel för att hantera smarta hemenheter från olika tillverkare med MQTT, React och Node.js.",
+            "author": "Johan Johansson",
+            "dateNexus": "den",
+            "date": "10 januari 2024",
+            "toc": [
+                {
+                    "name": "Projektmål",
+                    "link": "#goals"
+                },
+                {
+                    "name": "Teknikstack",
+                    "link": "#stack"
+                },
+                {
+                    "name": "Enhetsintegration",
+                    "link": "#integration"
+                },
+                {
+                    "name": "Automationsregler",
+                    "link": "#automation"
+                },
+                {
+                    "name": "Energiövervakning",
+                    "link": "#energy"
+                },
+                {
+                    "name": "Nästa Steg",
+                    "link": "#next"
+                }
+            ],
+            "sections": {
+                "goals": {
+                    "title": "Projektmål",
+                    "content": "Målet var att skapa en enhetlig instrumentpanel för att hantera alla smarta hemenheter från olika tillverkare, för att undvika fragmentering genom att ha flera appar för lampor, termostater och säkerhetskameror."
+                },
+                "stack": {
+                    "title": "Teknikstack",
+                    "content": "Instrumentpanelen är byggd med React för frontend och Node.js för backend. MQTT-broker hanterar kommunikation med IoT-enheter, medan en PostgreSQL-databas lagrar enhetstillstånd, automationsregler och historiska data."
+                },
+                "integration": {
+                    "title": "Enhetsintegration",
+                    "content": "Systemet stöder flera protokoll inklusive MQTT, Zigbee och HTTP API:er. Anpassade adaptrar översätter enhetsspecifika kommandon till ett enhetligt gränssnitt, vilket gör det enkelt att lägga till stöd för nya enheter."
+                },
+                "automation": {
+                    "title": "Automationsregler",
+                    "content": "Användare kan skapa anpassade automationsregler med hjälp av en visuell flödesredigerare. Regler kan vara tidsbaserade, utlösas av sensoravläsningar eller aktiveras av enhetstillståndsändringar. Komplexa scenarier som 'stäng av alla lampor när du lämnar hemmet' är enkla att konfigurera."
+                },
+                "energy": {
+                    "title": "Energiövervakning",
+                    "content": "Instrumentpanelen inkluderar realtidsövervakning av energiförbrukning och historisk analys. Användare kan identifiera energikrävande enheter och optimera sina användningsmönster för att minska elräkningar."
+                },
+                "next": {
+                    "title": "Nästa Steg",
+                    "content": "Framtida utveckling inkluderar röstkontrollintegration, maskininlärning för prediktiv automation och förbättrade säkerhetsfunktioner som anomalidetektering för ovanligt enhetsbeteende."
+                }
+            }
+        },
+        "budgettracker": {
+            "title": "BudgetTracker: Personlig Ekonomihantering",
+            "intro": "Bygga ett omfattande verktyg för personlig ekonomi med utgiftsspårning, budgetplanering och insiktsfulla datavisualiseringar.",
+            "author": "Johan Johansson",
+            "dateNexus": "den",
+            "date": "5 december 2023",
+            "toc": [
+                {
+                    "name": "Varför Jag Byggde BudgetTracker",
+                    "link": "#why"
+                },
+                {
+                    "name": "Kärnfunktioner",
+                    "link": "#features"
+                },
+                {
+                    "name": "Teknisk Arkitektur",
+                    "link": "#architecture"
+                },
+                {
+                    "name": "Datavisualisering",
+                    "link": "#visualization"
+                },
+                {
+                    "name": "Säkerhet och Integritet",
+                    "link": "#security"
+                },
+                {
+                    "name": "Framtida Förbättringar",
+                    "link": "#future"
+                }
+            ],
+            "sections": {
+                "why": {
+                    "title": "Varför Jag Byggde BudgetTracker",
+                    "content": "Att hantera personlig ekonomi kan vara överväldigande med flera konton, prenumerationer och dagliga utgifter. Jag byggde BudgetTracker för att förenkla utgiftsspårning och ge användbara insikter i utgiftsmönster."
+                },
+                "features": {
+                    "title": "Kärnfunktioner",
+                    "content": "Applikationen inkluderar automatisk utgiftskategorisering, detektering av återkommande transaktioner, budgetvarningar och anpassningsbara utgiftsgränser. Användare kan skapa flera budgetar för olika kategorier som matvaror, underhållning och transport."
+                },
+                "architecture": {
+                    "title": "Teknisk Arkitektur",
+                    "content": "Byggd med Angular för frontend och Node.js/Express backend använder BudgetTracker MySQL för relationell datalagring. Arkitekturen stöder realtidsuppdateringar och synkronisering över flera enheter."
+                },
+                "visualization": {
+                    "title": "Datavisualisering",
+                    "content": "Interaktiva diagram byggda med Chart.js hjälper användare att förstå sina utgiftsvanor. Månatliga jämförelser, kategoriuppdelningar och trendanalys gör det enkelt att identifiera förbättringsområden."
+                },
+                "security": {
+                    "title": "Säkerhet och Integritet",
+                    "content": "All finansiell data är krypterad i vila och under överföring. Applikationen följer säkerhetsrutiner inklusive lösenordshashning med bcrypt, JWT-autentisering och säker sessionshantering."
+                },
+                "future": {
+                    "title": "Framtida Förbättringar",
+                    "content": "Planerade funktioner inkluderar bankkontointegrering via Plaid API, automatiserade sparrekommendationer med maskininlärning och samarbetsbudgetar för familjer eller rumskamrater."
+                }
+            }
+        }
+    },
+
+    "footer": {
+        "links":  [
+            {
+                "name": "Bibliotek och erkännanden",
+                "url": "/se/credits"
+            }
+        ]
+    }
+}

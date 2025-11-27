@@ -1,0 +1,20 @@
+.text-large {
+    font-size: clamp(1.5rem,5vw,3rem);
+    max-width: 900px;
+    margin: 0 0 0.85em 0;
+    line-height: 1.2;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 500, "INKT" 100;
+}
+
+.text-xl {
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(24px, 5vw, 42px);
+    font-weight: 400;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.italic {
+    font-style: italic;
+}
