@@ -609,11 +609,35 @@
             "sections": {
                 "introduction": {
                     "title": "Introduction",
-                    "content": "In this article, I'll walk you through building an automated garden monitoring and watering system using an ESP32 microcontroller, soil moisture sensors, and a mobile application for remote control."
+                    "content": "In this article, I'll walk you through building an automated garden monitoring and watering system using an ESP32 microcontroller, soil moisture sensors, and a mobile application for remote control.",
+                    "images": [
+                        {
+                            "src": "/assets/images/posts/post-image-sample.png",
+                            "caption": "ESP32 microcontroller setup"
+                        },
+                        {
+                            "src": "/assets/images/posts/post-image-sample.png",
+                            "caption": "Complete garden monitoring system"
+                        }
+                    ]
                 },
                 "hardware": {
                     "title": "Hardware Components",
-                    "content": "The system uses ESP32 for its built-in WiFi capabilities, DHT22 sensors for temperature and humidity, capacitive soil moisture sensors, and a relay module to control water pumps. The entire setup is powered by a 5V supply with backup battery support."
+                    "content": "The system uses ESP32 for its built-in WiFi capabilities, DHT22 sensors for temperature and humidity, capacitive soil moisture sensors, and a relay module to control water pumps. The entire setup is powered by a 5V supply with backup battery support.",
+                    "images": [
+                        {
+                            "src": "/assets/images/posts/post-image-sample.png",
+                            "caption": "Moisture sensor placement"
+                        },
+                        {
+                            "src": "/assets/images/posts/post-image-sample.png",
+                            "caption": "Relay module and pump connection"
+                        },
+                        {
+                            "src": "/assets/images/posts/post-image-sample.png",
+                            "caption": "Power supply with battery backup"
+                        }
+                    ]
                 },
                 "software": {
                     "title": "Software Architecture",

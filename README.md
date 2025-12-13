@@ -424,6 +424,75 @@ project_se.html
 
 **Note**: Blog posts are independent EJS template files. Each post uses a single EJS file that serves all languages - the same template file is rendered for `/en/posts/my-post`, `/es/posts/my-post`, and `/se/posts/my-post`. Use the i18n system (`t("fullposts.slug.*")`) to provide translated content, or write custom HTML directly in the EJS file if the post doesn't need translation.
 
+### Adding Images with Captions to Blog Posts
+
+Blog posts support rows of images with optional captions. Images are defined in the translation files and automatically rendered by the EJS template.
+
+#### Adding Images to a Section
+
+In your translation file (`site/locales/{lang}/translation.json`), add an `images` array to any section:
+
+```json
+"fullposts": {
+  "my-post": {
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "Your text content here...",
+        "images": [
+          {
+            "src": "/assets/images/posts/photo1.jpg",
+            "caption": "Description of the first image"
+          },
+          {
+            "src": "/assets/images/posts/photo2.jpg",
+            "caption": "Description of the second image"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+#### Image Row Behavior
+
+- **Responsive Layout**: Images automatically arrange in a flexible row with wrapping on smaller screens
+- **Equal Width**: Images in the same row attempt to maintain equal width
+- **Minimum Width**: Each image maintains a minimum width of 200px before wrapping
+- **Caption Style**: Captions appear below each image in italicized, slightly dimmed text
+
+#### Best Practices
+
+1. **Image Paths**: Use absolute paths starting with `/assets/images/posts/`
+2. **Image Count**: 2-3 images per row works best on most screen sizes
+3. **Image Dimensions**: Use consistent aspect ratios for images in the same row for better visual alignment
+4. **Alt Text**: Captions are automatically used as `alt` attributes for accessibility
+5. **File Organization**: Store blog post images in `site/assets/images/posts/`
+
+#### Example in EJS Template
+
+Your EJS template should include this pattern for each section:
+
+```ejs
+<h2 id="section-id"><%= t("fullposts.my-post.sections.introduction.title") %></h2>
+<p><%= t("fullposts.my-post.sections.introduction.content") %></p>
+<% if (t("fullposts.my-post.sections.introduction.images", { returnObjects: true, defaultValue: [] }).length > 0) { %>
+    <div class="image-row">
+        <% t("fullposts.my-post.sections.introduction.images", { returnObjects: true }).forEach(img => { %>
+            <div class="image-row-item">
+                <a href="<%= img.src %>" target="_blank" rel="noopener noreferrer">
+                    <img src="<%= img.src %>" alt="<%= img.caption %>">
+                </a>
+                <div class="image-row-caption"><%= img.caption %></div>
+            </div>
+        <% }); %>
+    </div>
+<% } %>
+```
+
+This pattern is already implemented in the `gardenbot.ejs` template which you can use as a reference.
+
 ### About Section
 
 The `about` object contains your personal bio displayed on the homepage:

@@ -42,15 +42,63 @@
                 <div class="content">
                     <h2 id="introduction"><%= t("fullposts.gardenbot.sections.introduction.title") %></h2>
                     <p><%= t("fullposts.gardenbot.sections.introduction.content") %></p>
+                    <% if (t("fullposts.gardenbot.sections.introduction.images", { returnObjects: true, defaultValue: [] }).length > 0) { %>
+                        <div class="image-row">
+                            <% t("fullposts.gardenbot.sections.introduction.images", { returnObjects: true }).forEach(img => { %>
+                                <div class="image-row-item">
+                                    <a href="<%= img.src %>" target="_blank" rel="noopener noreferrer">
+                                        <img src="<%= img.src %>" alt="<%= img.caption %>">
+                                    </a>
+                                    <div class="image-row-caption"><%= img.caption %></div>
+                                </div>
+                            <% }); %>
+                        </div>
+                    <% } %>
                     
                     <h2 id="hardware"><%= t("fullposts.gardenbot.sections.hardware.title") %></h2>
                     <p><%= t("fullposts.gardenbot.sections.hardware.content") %></p>
+                    <% if (t("fullposts.gardenbot.sections.hardware.images", { returnObjects: true, defaultValue: [] }).length > 0) { %>
+                        <div class="image-row">
+                            <% t("fullposts.gardenbot.sections.hardware.images", { returnObjects: true }).forEach(img => { %>
+                                <div class="image-row-item">
+                                    <a href="<%= img.src %>" target="_blank" rel="noopener noreferrer">
+                                        <img src="<%= img.src %>" alt="<%= img.caption %>">
+                                    </a>
+                                    <div class="image-row-caption"><%= img.caption %></div>
+                                </div>
+                            <% }); %>
+                        </div>
+                    <% } %>
                     
                     <h2 id="software"><%= t("fullposts.gardenbot.sections.software.title") %></h2>
                     <p><%= t("fullposts.gardenbot.sections.software.content") %></p>
+                    <% if (t("fullposts.gardenbot.sections.software.images", { returnObjects: true, defaultValue: [] }).length > 0) { %>
+                        <div class="image-row">
+                            <% t("fullposts.gardenbot.sections.software.images", { returnObjects: true }).forEach(img => { %>
+                                <div class="image-row-item">
+                                    <a href="<%= img.src %>" target="_blank" rel="noopener noreferrer">
+                                        <img src="<%= img.src %>" alt="<%= img.caption %>">
+                                    </a>
+                                    <div class="image-row-caption"><%= img.caption %></div>
+                                </div>
+                            <% }); %>
+                        </div>
+                    <% } %>
                     
                     <h2 id="future"><%= t("fullposts.gardenbot.sections.future.title") %></h2>
                     <p><%= t("fullposts.gardenbot.sections.future.content") %></p>
+                    <% if (t("fullposts.gardenbot.sections.future.images", { returnObjects: true, defaultValue: [] }).length > 0) { %>
+                        <div class="image-row">
+                            <% t("fullposts.gardenbot.sections.future.images", { returnObjects: true }).forEach(img => { %>
+                                <div class="image-row-item">
+                                    <a href="<%= img.src %>" target="_blank" rel="noopener noreferrer">
+                                        <img src="<%= img.src %>" alt="<%= img.caption %>">
+                                    </a>
+                                    <div class="image-row-caption"><%= img.caption %></div>
+                                </div>
+                            <% }); %>
+                        </div>
+                    <% } %>
                 </div>
 
             </main>
