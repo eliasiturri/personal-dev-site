@@ -403,7 +403,7 @@ perspective: 1000px;
 
 .image-row-item img {
     width: 100%;
-    height: auto;
+    height: 300px;
     object-fit: cover;
     border-radius: 4px;
     transition: opacity 0.2s ease;
