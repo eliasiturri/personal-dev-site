@@ -640,8 +640,9 @@
                     ]
                 },
                 "software": {
-                    "title": "Software Architecture",
-                    "content": "The mobile app communicates with the ESP32 via MQTT protocol, allowing real-time monitoring of sensor data and remote control of watering schedules. The system includes automatic watering based on soil moisture thresholds and weather forecasts."
+                    "title": "## Software Architecture",
+                    "content": "The mobile app communicates with the ESP32 via **MQTT protocol**, allowing real-time monitoring of sensor data and remote control of watering schedules.\n\nKey features include:\n- Automatic watering based on soil moisture thresholds\n- Weather forecast integration\n- Real-time sensor data visualization\n- Custom scheduling with `cron` expressions\n\nThe system architecture follows a simple flow:\n\n```\nESP32 → MQTT Broker → Mobile App\n```",
+                    "asMarkdown": true
                 },
                 "future": {
                     "title": "Future Improvements",

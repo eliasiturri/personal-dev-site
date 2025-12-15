@@ -7,6 +7,7 @@
     "i18next": "^25.6.3",
     "i18next-fs-backend": "^2.6.1",
     "i18next-http-middleware": "^3.8.2",
+    "marked": "^17.0.1",
     "nodemailer": "^7.0.10",
     "sql.js": "^1.13.0"
   }

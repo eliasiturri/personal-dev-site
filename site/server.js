@@ -3,6 +3,7 @@ const i18next = require('i18next');
 const Backend = require('i18next-fs-backend');
 const i18nextMiddleware = require('i18next-http-middleware');
 const nodemailer = require("nodemailer");
+const { marked } = require('marked');
 const path = require('path');
 const fs = require('fs');
 require('dotenv').config();
@@ -40,6 +41,9 @@ app.use(express.urlencoded({ extended: true }));  // Parse URL-encoded bodies (a
 app.use(express.json());        // Parse JSON bodies (as sent by API clients)
 app.set('view engine', 'ejs');  // set the view engine to ejs
 app.use(i18nextMiddleware.handle(i18next));
+
+// Make marked available to EJS templates
+app.locals.marked = marked;
 
 var db = require('./database/database.js');
 

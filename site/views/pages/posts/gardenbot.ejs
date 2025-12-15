@@ -40,8 +40,19 @@
                 </div>      
 
                 <div class="content">
-                    <h2 id="introduction"><%= t("fullposts.gardenbot.sections.introduction.title") %></h2>
-                    <p><%= t("fullposts.gardenbot.sections.introduction.content") %></p>
+                    <% 
+                    const introSection = t("fullposts.gardenbot.sections.introduction", { returnObjects: true });
+                    const introAsMarkdown = introSection.asMarkdown || false;
+                    %>
+                    <% if (introAsMarkdown) { %>
+                        <div class="markdown-content">
+                            <%- marked.parse(introSection.title) %>
+                            <%- marked.parse(introSection.content) %>
+                        </div>
+                    <% } else { %>
+                        <h2 id="introduction"><%= introSection.title %></h2>
+                        <p><%= introSection.content %></p>
+                    <% } %>
                     <% if (t("fullposts.gardenbot.sections.introduction.images", { returnObjects: true, defaultValue: [] }).length > 0) { %>
                         <div class="image-row">
                             <% t("fullposts.gardenbot.sections.introduction.images", { returnObjects: true }).forEach(img => { %>
@@ -49,14 +60,29 @@
                                     <a href="<%= img.src %>" target="_blank" rel="noopener noreferrer">
                                         <img src="<%= img.src %>" alt="<%= img.caption %>">
                                     </a>
-                                    <div class="image-row-caption"><%= img.caption %></div>
+                                    <% if (introAsMarkdown && img.caption) { %>
+                                        <div class="image-row-caption markdown-content"><%- marked.parseInline(img.caption) %></div>
+                                    <% } else { %>
+                                        <div class="image-row-caption"><%= img.caption %></div>
+                                    <% } %>
                                 </div>
                             <% }); %>
                         </div>
                     <% } %>
                     
-                    <h2 id="hardware"><%= t("fullposts.gardenbot.sections.hardware.title") %></h2>
-                    <p><%= t("fullposts.gardenbot.sections.hardware.content") %></p>
+                    <% 
+                    const hardwareSection = t("fullposts.gardenbot.sections.hardware", { returnObjects: true });
+                    const hardwareAsMarkdown = hardwareSection.asMarkdown || false;
+                    %>
+                    <% if (hardwareAsMarkdown) { %>
+                        <div class="markdown-content">
+                            <%- marked.parse(hardwareSection.title) %>
+                            <%- marked.parse(hardwareSection.content) %>
+                        </div>
+                    <% } else { %>
+                        <h2 id="hardware"><%= hardwareSection.title %></h2>
+                        <p><%= hardwareSection.content %></p>
+                    <% } %>
                     <% if (t("fullposts.gardenbot.sections.hardware.images", { returnObjects: true, defaultValue: [] }).length > 0) { %>
                         <div class="image-row">
                             <% t("fullposts.gardenbot.sections.hardware.images", { returnObjects: true }).forEach(img => { %>
@@ -64,14 +90,29 @@
                                     <a href="<%= img.src %>" target="_blank" rel="noopener noreferrer">
                                         <img src="<%= img.src %>" alt="<%= img.caption %>">
                                     </a>
-                                    <div class="image-row-caption"><%= img.caption %></div>
+                                    <% if (hardwareAsMarkdown && img.caption) { %>
+                                        <div class="image-row-caption markdown-content"><%- marked.parseInline(img.caption) %></div>
+                                    <% } else { %>
+                                        <div class="image-row-caption"><%= img.caption %></div>
+                                    <% } %>
                                 </div>
                             <% }); %>
                         </div>
                     <% } %>
                     
-                    <h2 id="software"><%= t("fullposts.gardenbot.sections.software.title") %></h2>
-                    <p><%= t("fullposts.gardenbot.sections.software.content") %></p>
+                    <% 
+                    const softwareSection = t("fullposts.gardenbot.sections.software", { returnObjects: true });
+                    const softwareAsMarkdown = softwareSection.asMarkdown || false;
+                    %>
+                    <% if (softwareAsMarkdown) { %>
+                        <div class="markdown-content">
+                            <%- marked.parse(softwareSection.title) %>
+                            <%- marked.parse(softwareSection.content) %>
+                        </div>
+                    <% } else { %>
+                        <h2 id="software"><%= softwareSection.title %></h2>
+                        <p><%= softwareSection.content %></p>
+                    <% } %>
                     <% if (t("fullposts.gardenbot.sections.software.images", { returnObjects: true, defaultValue: [] }).length > 0) { %>
                         <div class="image-row">
                             <% t("fullposts.gardenbot.sections.software.images", { returnObjects: true }).forEach(img => { %>
@@ -79,14 +120,29 @@
                                     <a href="<%= img.src %>" target="_blank" rel="noopener noreferrer">
                                         <img src="<%= img.src %>" alt="<%= img.caption %>">
                                     </a>
-                                    <div class="image-row-caption"><%= img.caption %></div>
+                                    <% if (softwareAsMarkdown && img.caption) { %>
+                                        <div class="image-row-caption markdown-content"><%- marked.parseInline(img.caption) %></div>
+                                    <% } else { %>
+                                        <div class="image-row-caption"><%= img.caption %></div>
+                                    <% } %>
                                 </div>
                             <% }); %>
                         </div>
                     <% } %>
                     
-                    <h2 id="future"><%= t("fullposts.gardenbot.sections.future.title") %></h2>
-                    <p><%= t("fullposts.gardenbot.sections.future.content") %></p>
+                    <% 
+                    const futureSection = t("fullposts.gardenbot.sections.future", { returnObjects: true });
+                    const futureAsMarkdown = futureSection.asMarkdown || false;
+                    %>
+                    <% if (futureAsMarkdown) { %>
+                        <div class="markdown-content">
+                            <%- marked.parse(futureSection.title) %>
+                            <%- marked.parse(futureSection.content) %>
+                        </div>
+                    <% } else { %>
+                        <h2 id="future"><%= futureSection.title %></h2>
+                        <p><%= futureSection.content %></p>
+                    <% } %>
                     <% if (t("fullposts.gardenbot.sections.future.images", { returnObjects: true, defaultValue: [] }).length > 0) { %>
                         <div class="image-row">
                             <% t("fullposts.gardenbot.sections.future.images", { returnObjects: true }).forEach(img => { %>
@@ -94,7 +150,11 @@
                                     <a href="<%= img.src %>" target="_blank" rel="noopener noreferrer">
                                         <img src="<%= img.src %>" alt="<%= img.caption %>">
                                     </a>
-                                    <div class="image-row-caption"><%= img.caption %></div>
+                                    <% if (futureAsMarkdown && img.caption) { %>
+                                        <div class="image-row-caption markdown-content"><%- marked.parseInline(img.caption) %></div>
+                                    <% } else { %>
+                                        <div class="image-row-caption"><%= img.caption %></div>
+                                    <% } %>
                                 </div>
                             <% }); %>
                         </div>

@@ -493,6 +493,81 @@ Your EJS template should include this pattern for each section:
 
 This pattern is already implemented in the `gardenbot.ejs` template which you can use as a reference.
 
+### Using Markdown in Blog Posts
+
+Blog post sections support optional Markdown parsing, allowing you to use rich formatting without writing HTML. This is controlled per-section using the `asMarkdown` toggle.
+
+#### Enabling Markdown for a Section
+
+In your translation file (`site/locales/{lang}/translation.json`), add `"asMarkdown": true` to any section:
+
+```json
+"fullposts": {
+  "my-post": {
+    "sections": {
+      "introduction": {
+        "title": "## Introduction",
+        "content": "This is **bold text** and this is *italic*.\n\nYou can use:\n- Bullet lists\n- Code blocks\n- Links like [GitHub](https://github.com)\n\n```javascript\nconst example = 'code';\n```",
+        "asMarkdown": true
+      }
+    }
+  }
+}
+```
+
+#### Supported Markdown Features
+
+When `asMarkdown` is enabled, you can use:
+
+- **Headings**: `# H1`, `## H2`, `### H3`, etc.
+- **Bold**: `**bold text**` or `__bold text__`
+- **Italic**: `*italic text*` or `_italic text_`
+- **Lists**: Unordered (`-` or `*`) and ordered (`1.`, `2.`, etc.)
+- **Links**: `[text](url)`
+- **Code**: Inline with `` `code` `` or blocks with triple backticks
+- **Blockquotes**: `> quoted text`
+- **Horizontal Rules**: `---` or `***`
+- **Line Breaks**: Use `\n\n` for paragraph breaks
+
+#### Image Captions with Markdown
+
+When a section has `asMarkdown: true`, image captions will also be parsed as Markdown (inline only):
+
+```json
+"images": [
+  {
+    "src": "/assets/images/posts/photo.jpg",
+    "caption": "This caption can have **bold** and *italic* text"
+  }
+]
+```
+
+#### Mixing Markdown and Regular Sections
+
+You can mix sections with and without Markdown in the same post. Each section's `asMarkdown` toggle is independent:
+
+```json
+"sections": {
+  "intro": {
+    "title": "Plain Introduction",
+    "content": "Regular text without markdown",
+    "asMarkdown": false
+  },
+  "details": {
+    "title": "## Technical Details",
+    "content": "This section uses **Markdown** features",
+    "asMarkdown": true
+  }
+}
+```
+
+#### Implementation Notes
+
+- Markdown is parsed using the `marked` library
+- If `asMarkdown` is not specified or is `false`, content is rendered as plain text/HTML
+- Titles and content are both parsed when markdown is enabled
+- Custom CSS styling (`.markdown-content`) ensures markdown elements look consistent with the site theme
+
 ### About Section
 
 The `about` object contains your personal bio displayed on the homepage:
@@ -507,6 +582,11 @@ The `about` object contains your personal bio displayed on the homepage:
 ```
 
 Update this in all language files to customize your personal information.
+
+
+# Notes on going forward
+
+Ever since I've started relying heavily on i18n files for blog posts as well, introducing Markdown parsing, and image rows with captions, I am considering using a single view for all blog posts. It might look like this decreases the flexibility on this part of the site, but since this fits my needs for now, I might do some refactor and leave the single file post option as a legacy feature, or remove it altogether.
 
 ## License
 
